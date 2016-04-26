@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<qry source="select clave_parametro,parametro,valor from configuracion where clave_empleado=clave_usuario" columnas="1" >
+    <registro id="1" >
+        <clave_parametro tipo_dato="integer"><![CDATA[1]]>
+            <tipo_control></tipo_control>
+            <evento></evento>
+            <ayuda></ayuda>
+        </clave_parametro>
+        <parametro tipo_dato="string"><![CDATA[Par&aacute;metro 1]]>
+            <tipo_control></tipo_control>
+            <evento></evento>
+            <ayuda></ayuda>
+        </parametro>
+        <valor tipo_dato="string"><![CDATA[Valor 1]]>
+            <tipo_control></tipo_control>
+            <evento></evento>
+            <ayuda></ayuda>
+        </valor>
+    </registro>
+</qry>

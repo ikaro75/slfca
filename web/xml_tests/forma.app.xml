@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<insert_pagare><![CDATA[<insert><![CDATA[INSERT INTO pagarex_pagare (clave_contrato,fecha,clave_cliente,importe,clave_moneda,tipo_cambio,tasa_interes,tasa_interes_moratorio,fecha_a_pagar,clave_empleado,clave_estatus,clave_cuenta,numero_transferencia,fecha_transferencia)VALUES(2,'2013/11/02',1,50000.00,1,1,4.5,24,'2014/02/28',1,1,null,null,null)]]></insert>
+<pk>26</pk>]]></insert_pagare>
+<insert_poliza><![CDATA[INSERT INTO fx_poliza (fecha, folio_pagare, clave_empleado, clave_tipo_transaccion,clave_estatus,excluido,nota)VALUES('2013/11/02',26,1,3,1,0,'')]]></insert_poliza>
+<pk>17</pk>
+<insert_poliza_detalle><![CDATA[INSERT INTO fx_poliza_detalle (clave_poliza,cargo, clave_tipo_transaccion,importe, clave_moneda, tipo_cambio, clave_beneficiario, clave_cuenta, clave_clase, folio_cheque)VALUES (17,0,3,50000.0,1,1.0,1,38,1,null)]]></insert_poliza_detalle>
+<insert_poliza_detalle><![CDATA[INSERT INTO fx_poliza_detalle (clave_poliza,cargo, clave_tipo_transaccion,importe, clave_moneda, tipo_cambio, clave_beneficiario, clave_cuenta, clave_clase, folio_cheque)VALUES (17,1,3,50000.0,1,1.0,1,7,1,null)]]></insert_poliza_detalle>

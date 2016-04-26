@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de Control y Seguimiento del Programa Nacional de Sustitución de Lámparas Incandescentes por Fluorescentes
+Compactas Autobalastradas (LFCA)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow" />
+        <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon"  />
+
+        <link rel="stylesheet" type="text/css" href="jQueryMobile/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="jQueryMobile/jQuery.mmenu-master/demo/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="jQueryMobile/jQuery.mmenu-master/dist/core/css/jquery.mmenu.all.css" />        
+        <script type="text/javascript" src="jQuery/js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="jQueryMobile/jquery.mobile-1.4.5.min.js" ></script>
+        <script type="text/javascript" src="jQueryMobile/jQuery.mmenu-master/dist/core/js/jquery.mmenu.min.all.js"></script>
+        <script type="text/javascript" src="jQueryMobile/jsf/vista.js"></script>
+        
+        <script type="text/javascript" src="jQueryMobile/jsf/jquery.comments_mobile.js"></script>
+        <script type="text/javascript" src="jQuery/js/jquery.timeago.js"></script>
+        <script type="text/javascript" src="jQuery/js/jquery.timeago.es.js"></script>
+        <script type="text/javascript" src="jQuery/js/jquery.form.js"></script>
+        <script type="text/javascript" src="jQueryMobile/jsf/jquery.form_mobile.js"></script>
+        <script type="text/javascript" src="jQueryMobile/jsf/jquery.form_mobile_queue.js"></script>
+        <script type="text/javascript" src="jQuery/js/jquery.calculator.min.js"></script>
+        <script type="text/javascript" src="jQuery/js/jquery.calculator-es.js"></script>
+        <script type="text/javascript" src="jQueryMobile/jsf/jquery.field_toolbar_mobile.js"></script>        
+    </head>
+    <body>
+        <div data-role="page" id="catalogo">
+            <div data-role="header" data-theme="a" class="header">
+                <a href="#menu" style="padding: 0px; border:0px; background-color:rgba(0, 0, 0, 0)"></a>
+                SLFCA
+                <button class="ui-btn ui-icon-plus ui-btn-icon-right" id ="btnNuevoRegistro" data-theme="a">Nuevo</button>
+            </div>
+            <div role="main" class="ui-content">
+                <form>
+                    <input id="txtBusca" data-type="search" placeholder="Escriba su búsqueda...">
+                </form>
+                <button class="ui-btn ui-icon-search ui-btn-icon-right" id="btnBusqueda">B&uacute;squeda avanzada</button>
+                <ul data-role="listview" data-inset="true" id="lvCatalogo">
+                    <!-- <li><a href="index.html">
+                    <h2>Stephen Weber</h2>
+                    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                    <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                    </a></li> -->
+                </ul> 
+                <div data-role="popup" id="divPopup" class="ui-content" data-theme="a" style="max-width:350px;">
+                    <p id="pPopup"></p>
+                </div>
+            </div>
+            <nav id="menu">
+            </nav>
+            <div data-role="footer">
+            </div>
+        </div>
+        
+        <input type="hidden" id="_up_" value="0" />
+        <input type="hidden" id="_status_" value="" />
+        <input type="hidden" id="_ce_" value=""  />
+        <input type="hidden" id="_host_" value=""  />
+        <input type="hidden" id="_cmd_" value=""  />  
+        <input type="hidden" id="_cf_" value=""  />
+        <input type="hidden" id="_pagina_" value=""  />
+        <input type="hidden" id="_rows_" value=""  />
+        <input type="hidden" id="_sidx_"  value=""  /> 
+        <input type="hidden" id="_sord_" value=""  />
+        <input type="hidden" id="_w_" value=""  />
+        <input type="hidden" id="_om_" value=""  />
+        <input type="hidden" id="_security_" value=""  />
+        <input type="hidden" id="_temp_" value=""  />
+        <input type="hidden" id="_busquedarapida_" value=""  />
+    </body>
+</html>

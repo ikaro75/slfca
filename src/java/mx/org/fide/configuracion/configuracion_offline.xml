@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    <empresa>
+        <razon_social><![CDATA[FIDE offline]]></razon_social>
+        <imagen_login>img/fide_login.png</imagen_login>
+        <imagen_banner>img/fide_banner.png</imagen_banner>
+        <db>
+            <servidor>10.55.210.5:1433</servidor>
+            <servidor_local>127.0.0.1\SQLExpress:1433</servidor_local>
+            <nombre>SLFCA_offline</nombre>
+            <usuario>dmartinez</usuario>
+            <password>dmartinez</password>
+            <usuario_servidor_local>sa</usuario_servidor_local>
+            <password_servidor_local>fide2015</password_servidor_local>
+            <tipo>MSSQL</tipo>
+        </db>
+        <email>
+            <iniciotls_habilitado>false</iniciotls_habilitado>
+            <servidor_smtp>10.55.210.34</servidor_smtp>
+            <puerto_smtp>25</puerto_smtp>
+            <usuario_smtp>noresponder@fide.org.mx</usuario_smtp>
+            <password_smtp>noresponder</password_smtp>
+        </email>
+    </empresa>                
+</configuracion>

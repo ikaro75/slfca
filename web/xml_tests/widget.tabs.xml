@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<qry source="select clave_forma,alias_tab, orden_tab from forma where clave_aplicacion=1 and clave_forma=2 union
+select clave_forma,alias_tab, orden_tab from forma where clave_aplicacion=1 and clave_forma_padre=2 order by orden_tab">
+	<registro id="1" >
+                <clave_forma tipo_dato="integer"><![CDATA[2]]></clave_forma>
+		<alias_tab tipo_dato="string"><![CDATA[Aplicaci&oacute;n]]></alias_tab>
+		<orden_tab tipo_dato="integer"><![CDATA[1]]></orden_tab>
+        </registro>
+	<registro id="2" >
+                <clave_forma tipo_dato="integer"><![CDATA[3]]></clave_forma>
+      		<alias_tab tipo_dato="string"><![CDATA[Formas]]></alias_tab>
+		<orden_tab tipo_dato="integer"><![CDATA[2]]></orden_tab>
+        </registro>
+	<registro id="3" >
+                <clave_forma tipo_dato="integer"><![CDATA[4]]></clave_forma>
+      		<alias_tab tipo_dato="string"><![CDATA[Men&uacute;s]]></alias_tab>
+		<orden_tab tipo_dato="integer"><![CDATA[3]]></orden_tab>
+        </registro>
+	<registro id="4" >
+                <clave_forma tipo_dato="integer"><![CDATA[5]]></clave_forma>
+      		<alias_tab tipo_dato="string"><![CDATA[Perfiles de seguridad]]></alias_tab>
+		<orden_tab tipo_dato="integer"><![CDATA[4]]></orden_tab>
+        </registro>
+	<registro id="5" >
+                <clave_forma tipo_dato="integer"><![CDATA[6]]></clave_forma>
+      		<alias_tab tipo_dato="string"><![CDATA[Usuarios]]></alias_tab>
+		<orden_tab tipo_dato="integer"><![CDATA[5]]></orden_tab>
+        </registro>
+</qry>

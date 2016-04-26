@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    <empresa>
+        <razon_social><![CDATA[eoTechno @icri.mx]]></razon_social>
+        <imagen_login>img/logo_cantina.jpg</imagen_login>
+        <imagen_banner>img/cantina_banner_vista.png</imagen_banner>
+        <db>
+            <servidor>localhost:3306</servidor>
+            <nombre>eotechne</nombre>
+            <usuario>infinite_root</usuario>
+            <password>Malditasea3$</password>
+            <tipo>MYSQL</tipo>
+        </db>
+        <email>
+            <usuario_smtp></usuario_smtp>
+            <iniciotls_habilitado></iniciotls_habilitado>
+            <servidor_smtp></servidor_smtp>
+            <usuario_smtp></usuario_smtp>
+            <password_smtp>/</password_smtp>
+        </email>
+    </empresa>     
+</configuracion>

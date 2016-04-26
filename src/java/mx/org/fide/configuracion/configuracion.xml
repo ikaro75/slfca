@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    <empresa>
+        <razon_social><![CDATA[FIDE produccion]]></razon_social>
+        <imagen_login>img/fide_login.png</imagen_login>
+        <imagen_banner>img/fide_banner.png</imagen_banner>
+        <db>
+            <servidor>10.55.210.5:1433</servidor>
+            <nombre>SLFCA</nombre>
+            <usuario>dmartinez</usuario>
+            <password>dmartinez</password>
+            <tipo>MSSQL</tipo>
+        </db>
+        <email>
+            <iniciotls_habilitado>false</iniciotls_habilitado>
+            <servidor_smtp>10.55.210.34</servidor_smtp>
+            <puerto_smtp>25</puerto_smtp>
+            <usuario_smtp>noresponder@fide.org.mx</usuario_smtp>
+            <password_smtp>noresponder</password_smtp>
+        </email>
+    </empresa>
+    <empresa>
+        <razon_social><![CDATA[FIDE pruebas]]></razon_social>
+        <imagen_login>img/fide_login.png</imagen_login>
+        <imagen_banner>img/fide_banner.png</imagen_banner>
+        <db>
+            <servidor>10.55.210.5:1433</servidor>
+            <nombre>SLFCA_pruebas</nombre>
+            <usuario>dmartinez</usuario>
+            <password>dmartinez</password>
+            <tipo>MSSQL</tipo>
+        </db>
+        <email>
+            <iniciotls_habilitado>false</iniciotls_habilitado>
+            <servidor_smtp>10.55.210.34</servidor_smtp>
+            <puerto_smtp>25</puerto_smtp>
+            <usuario_smtp>noresponder@fide.org.mx</usuario_smtp>
+            <password_smtp>noresponder</password_smtp>
+        </email>
+    </empresa>            
+</configuracion>

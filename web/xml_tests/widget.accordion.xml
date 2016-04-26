@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<qry source="select a.clave_aplicacion, a.aplicacion, pa.*,p.clave_permiso, p.clave_forma, p.mostrar, p.insertar, p.actualizar, p.eliminar, p.mostrar_informacion_sensible  from perfil_aplicacion pa, aplicacion a, permiso p where a.clave_aplicacion=pa.clave_aplicacion and a.clave_forma_principal=p.clave_forma and a.clave_aplicacion=p.clave_aplicacion and pa.clave_perfil=X" >
+    <registro id="1">
+        <aplicacion tipo_dato="string"><![CDATA[BackEnd]]></aplicacion>
+        <clave_perfil tipo_dato="integer"><![CDATA[1]]></clave_perfil>
+        <clave_aplicacion tipo_dato="integer"><![CDATA[1]]></clave_aplicacion>
+        <activo tipo_dato="integer"><![CDATA[1]]></activo>
+        <clave_permiso tipo_dato="integer"><![CDATA[2]]></clave_permiso>
+        <clave_forma tipo_dato="integer"><![CDATA[2]]></clave_forma>
+        <mostrar tipo_dato="integer"><![CDATA[1]]></mostrar>
+        <insertar tipo_dato="integer"><![CDATA[1]]></insertar>
+        <actualizar tipo_dato="integer"><![CDATA[1]]></actualizar>
+        <eliminar tipo_dato="integer"><![CDATA[1]]></eliminar>
+        <mostrar_informacion_sensible tipo_dato="integer"><![CDATA[1]]></mostrar_informacion_sensible>
+        <forma tipo_dato="string"><![CDATA[Aplicaci&oacute;n]]></forma>
+        <alias_menu_nueva_entidad tipo_dato="string"><![CDATA[Nueva aplicaci&oacute;n]]></alias_menu_nueva_entidad>
+        <alias_menu_mostrar_entidad tipo_dato="string"><![CDATA[Aplicaciones]]></alias_menu_mostrar_entidad>
+    </registro>
+    <registro id="2">
+        <aplicacion tipo_dato="string"><![CDATA[CRM]]></aplicacion>
+        <clave_perfil tipo_dato="integer"><![CDATA[1]]></clave_perfil>
+        <clave_aplicacion tipo_dato="integer"><![CDATA[2]]></clave_aplicacion>
+        <activo tipo_dato="integer"><![CDATA[1]]></activo>
+        <clave_permiso tipo_dato="integer"><![CDATA[3]]></clave_permiso>
+        <clave_forma tipo_dato="integer"><![CDATA[7]]></clave_forma>
+        <mostrar tipo_dato="integer"><![CDATA[1]]></mostrar>
+        <insertar tipo_dato="integer"><![CDATA[1]]></insertar>
+        <actualizar tipo_dato="integer"><![CDATA[1]]></actualizar>
+        <eliminar tipo_dato="integer"><![CDATA[1]]></eliminar>
+        <mostrar_informacion_sensible tipo_dato="integer"><![CDATA[1]]></mostrar_informacion_sensible>
+        <forma tipo_dato="string"><![CDATA[Grupo de inter&eacute;s]]></forma>
+        <alias_menu_nueva_entidad tipo_dato="string"><![CDATA[Nuevo grupo de inter&eacute;s]]></alias_menu_nueva_entidad>
+        <alias_menu_mostrar_entidad tipo_dato="string"><![CDATA[Grupos de inter&eacute;s]]></alias_menu_mostrar_entidad>
+    </registro>
+    <registro id="3">
+        <aplicacion tipo_dato="string"><![CDATA[Proyectos]]></aplicacion>
+        <clave_perfil tipo_dato="integer"><![CDATA[1]]></clave_perfil>
+        <clave_aplicacion tipo_dato="integer"><![CDATA[3]]></clave_aplicacion>
+        <activo tipo_dato="integer"><![CDATA[1]]></activo>
+        <clave_permiso tipo_dato="integer"><![CDATA[3]]></clave_permiso>
+        <clave_forma tipo_dato="integer"><![CDATA[8]]></clave_forma>
+        <mostrar tipo_dato="integer"><![CDATA[1]]></mostrar>
+        <insertar tipo_dato="integer"><![CDATA[1]]></insertar>
+        <actualizar tipo_dato="integer"><![CDATA[1]]></actualizar>
+        <eliminar tipo_dato="integer"><![CDATA[1]]></eliminar>
+        <mostrar_informacion_sensible tipo_dato="integer"><![CDATA[1]]></mostrar_informacion_sensible>
+        <forma tipo_dato="string"><![CDATA[Proyecto]]></forma>
+        <alias_menu_nueva_entidad tipo_dato="string"><![CDATA[Nuevo proyecto]]></alias_menu_nueva_entidad>
+        <alias_menu_mostrar_entidad tipo_dato="string"><![CDATA[Proyecto]]></alias_menu_mostrar_entidad>
+    </registro>
+    <registro id="4">
+        <aplicacion tipo_dato="string"><![CDATA[SRM]]></aplicacion>
+        <clave_perfil tipo_dato="integer"><![CDATA[1]]></clave_perfil>
+        <clave_aplicacion tipo_dato="integer"><![CDATA[4]]></clave_aplicacion>
+        <activo tipo_dato="integer"><![CDATA[1]]></activo>
+        <clave_permiso tipo_dato="integer"><![CDATA[4]]></clave_permiso>
+        <clave_forma tipo_dato="integer"><![CDATA[9]]></clave_forma>
+        <mostrar tipo_dato="integer"><![CDATA[1]]></mostrar>
+        <insertar tipo_dato="integer"><![CDATA[1]]></insertar>
+        <actualizar tipo_dato="integer"><![CDATA[1]]></actualizar>
+        <eliminar tipo_dato="integer"><![CDATA[1]]></eliminar>
+        <mostrar_informacion_sensible tipo_dato="integer"><![CDATA[1]]></mostrar_informacion_sensible>
+        <forma tipo_dato="string"><![CDATA[Proveedor]]></forma>
+        <alias_menu_nueva_entidad tipo_dato="string"><![CDATA[Nuevo proveedor]]></alias_menu_nueva_entidad>
+        <alias_menu_mostrar_entidad tipo_dato="string"><![CDATA[Proveedores]]></alias_menu_mostrar_entidad>
+    </registro>
+</qry>

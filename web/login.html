@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de Control y Seguimiento del Programa Nacional de Sustitución de Lámparas Incandescentes por Fluorescentes
+Compactas Autobalastradas (LFCA)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon"  />
+        <link rel="stylesheet" href="jQueryMobile/jquery.mobile-1.4.5.min.css" />
+        
+        <script type="text/javascript" src="jQuery/js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="jQueryMobile/jquery.mobile-1.4.5.min.js" ></script>
+        <script type="text/javascript" src="jQueryMobile/jsf/login.js" ></script>        
+    </head>
+    <body>
+        <div data-role="page" id="login">
+            <div data-role="header">
+                <h1>Inicio de sesi&oacute;n</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <form id="login_form" method="post" action="#">
+                    <img src="img/login.png" style="display: block;margin-left: auto; margin-right: auto;"/>
+                    <input type="text" name="email" id="email" placeholder="Correo electr&oacute;nico" data-theme="d">
+                    <input type="password" name="password" id="password" placeholder="Contrase&ntilde;a" data-theme="d">
+                    <input type="submit" data-inline="true" value="Iniciar sesi&oacute;n" id="submitLogin" name="submitLogin" data-theme="b">
+                    <a href="#recupera_pw" id="lnkRecuperaPW" data-theme="b" data-transition="flip">Olvid&eacute; mi contrase&ntilde;a</a>
+                </form>
+                <div data-role="popup" id="msjLogin" class="ui-content" data-theme="a" style="max-width:350px;">
+                    <p id="dfnMessageLogin"></p>
+                </div>
+            </div>
+            <div data-role="footer">
+            </div>
+        </div>
+        <div data-role="page" id="recupera_pw">
+            <div data-role="header">
+                <h1>Recupera contrase&ntilde;a</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <form id="login_form" method="post" action="#">
+                    <img src="img/login.png" style="display: block;margin-left: auto; margin-right: auto;"/>
+                    <input type="text" name="rc" id="rc" placeholder="Correo electr&oacute;nico" data-theme="d">
+                    <input type="submit" data-inline="true" value="Recuperar contrase&ntilde;a" id="btnRecuperarPw" name="btnRecuperarPw" data-theme="b">
+                    <a href="#login" id="lnkIniciaSesion" data-theme="b" data-transition="flip">Iniciar sesi&oacute;n</a>
+                </form>
+                <div data-role="popup" id="msjRecuperaPW" class="ui-content" data-theme="a" style="max-width:350px;">
+                    <p id="dfnMessageRP"></p>
+                </div>
+            </div>
+            <div data-role="footer">
+            </div>
+        </div>        
+    </body>
+</html>

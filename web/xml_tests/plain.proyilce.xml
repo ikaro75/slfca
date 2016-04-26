@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<td id="td_clave_beneficiario"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31374-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Folio</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="int" id="clave_beneficiario" name="clave_beneficiario" tabindex="1" class="singleInput" type="text" value=""  onBlur='javascript:check_number(this)' /> 
+</td>§<td id="td_rpu"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31375-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>RPU</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="varchar" id="rpu" name="rpu" tabindex="2" class="singleInput" type="text" value=""  /> 
+</td>§<td id="td_nombre"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31377-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Nombre</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="varchar" id="nombre" name="nombre" tabindex="3" class="singleInput" type="text" value=""  /> 
+</td>§<td id="td_clave_estado"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31379-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Estado</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <select tipo_dato="int" tabindex="4" class="singleInput" id="clave_estadoclave_estado" name="clave_estadoclave_estado" >
+        <option selected='selected' ></option>
+        <option  value='1' >AGUASCALIENTES</option>
+        <option  value='2' >BAJA CALIFORNIA</option>
+        <option  value='3' >BAJA CALIFORNIA SUR</option>
+        <option  value='4' >CAMPECHE</option>
+        <option  value='7' >CHIAPAS</option>
+        <option  value='8' >CHIHUAHUA</option>
+        <option  value='5' >COAHUILA DE ZARAGOZA</option>
+        <option  value='6' >COLIMA</option>
+        <option  value='10' >DURANGO</option>
+        <option  value='15' >ESTADO DE MEXICO</option>
+        <option  value='11' >GUANAJUATO</option>
+        <option  value='12' >GUERRERO</option>
+        <option  value='13' >HIDALGO</option>
+        <option  value='14' >JALISCO</option>
+        <option  value='16' >MICHOACAN DE OCAMPO</option>
+        <option  value='17' >MORELOS</option>
+        <option  value='18' >NAYARIT</option>
+        <option  value='19' >NUEVO LEON</option>
+        <option  value='20' >OAXACA</option>
+        <option  value='21' >PUEBLA</option>
+        <option  value='22' >QUERETARO</option>
+        <option  value='23' >QUINTANA ROO</option>
+        <option  value='24' >SAN LUIS POTOSI</option>
+        <option  value='25' >SINALOA</option>
+        <option  value='26' >SONORA</option>
+        <option  value='27' >TABASCO</option>
+        <option  value='28' >TAMAULIPAS</option>
+        <option  value='29' >TLAXCALA</option>
+        <option  value='30' >VERACRUZ DE IGNACIO</option>
+        <option  value='31' >YUCATAN</option>
+        <option  value='32' >ZACATECAS</option>
+    </select>
+</td>§<td id="td_clave_municipio"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31380-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Municipio</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <select tipo_dato="int" tabindex="5" class="singleInput" id="clave_municipioclave_municipio" name="clave_municipioclave_municipio" >
+        <option selected='selected' ></option>
+    </select>
+</td>§<td id="td_poblacion"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31381-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Población</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="varchar" id="poblacion" name="poblacion" tabindex="6" class="singleInput" type="text" value=""  /> 
+</td>§<td id="td_colonia"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31382-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Colonia</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="varchar" id="colonia" name="colonia" tabindex="7" class="singleInput" type="text" value=""  /> 
+</td>§<td id="td_direccion"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31383-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Dirección</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="varchar" id="direccion" name="direccion" tabindex="8" class="singleInput" type="text" value=""  /> 
+</td>§<td id="td_cp"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31384-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>CP</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="varchar" id="cp" name="cp" tabindex="9" class="singleInput" type="text" value=""  /> 
+</td>§<td id="td_clave_punto"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31390-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Tienda</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <select tipo_dato="int" tabindex="10" class="singleInput" id="clave_puntoclave_punto" name="clave_puntoclave_punto" >
+        <option selected='selected' ></option>
+    </select>
+</td>§<td id="td_clave_carpeta"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31391-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Carpeta</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <select tipo_dato="int" tabindex="11" class="singleInput" id="clave_carpetaclave_carpeta" name="clave_carpetaclave_carpeta" >
+        <option selected='selected' ></option>
+    </select>
+</td>§<td id="td_pagina"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31392-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Página</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="int" id="pagina" name="pagina" tabindex="12" class="singleInput" type="text" value=""  onBlur='javascript:check_number(this)' /> 
+</td>§<td id="td_clave_tipo_padron"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-31394-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Tipo de padrón</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <select tipo_dato="int" tabindex="13" class="singleInput" id="clave_tipo_padronclave_tipo_padron" name="clave_tipo_padronclave_tipo_padron" >
+        <option selected='selected' ></option>
+        <option  value='1' >Elegible</option>
+        <option  value='2' >Ampliado</option>
+    </select>
+</td>§<td id="td_fecha_entrega"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-33316-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Fecha de disponibilidad en tienda</a>
+</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="smalldatetime" id="fecha_entrega" name="fecha_entrega" tabindex="14" class="singleInput fecha" type="text" value=""  /> 
+</td>§<td id="td_fecha_registro%inicial"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-33330-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Fecha de registro</a> (inicial)</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="smalldatetime" id="fecha_registro%inicial" name="fecha_registro%inicial" tabindex="15" class="singleInput fecha" type="text" value=""  /> 
+</td>§<td id="td_fecha_registro%final"  class="etiqueta_forma1">
+    <a id='lnkEditFieldDef-1-13-33330-2=clave_aplicacion=1293=clave_forma=613' href='#' class='edit_field' title='Haga clic aqui para abrir su definici&oacute;n en el diccionario de datos'>Fecha de registro</a> (final)</td>
+<td class="etiqueta_forma_control1">
+    <input tipo_dato="smalldatetime" id="fecha_registro%inicial" name="fecha_registro%inicial" tabindex="15" class="singleInput fecha" type="text" value=""  /> 
+</td>

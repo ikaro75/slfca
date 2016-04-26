@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="administraxPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.administrax.restaurantex.RestaurantexCuentaDetalle</class>
+    <class>com.administrax.restaurantex.RestaurantexCuenta</class>
+    <class>com.administrax.restaurantex.MesaReservacion</class>
+    <class>com.administrax.restaurantex.Reservacion</class>
+    <class>com.administrax.administrax.AdministraxProducto</class>
+    <class>com.administrax.administrax.AdministraxCliente</class>
+    <class>com.administrax.restaurantex.Mesa</class>
+    <class>com.administrax.restaurantex.AdministraxEmpresa</class>
+    <class>com.administrax.restaurantex.RestaurantexSala</class>
+    <class>com.administrax.restaurantex.RestaurantexMesaEmpleado</class>
+    <class>com.administrax.restaurantex.Cocina</class>
+    <class>com.administrax.administrax.AdministraxDocumentoPartida</class>
+    <class>mx.org.fide.administracion.Documento</class>
+    <class>mx.org.fide.administracion.DocumentoPartida</class>
+    <class>mx.org.fide.administracion.Pago</class>
+    <class>mx.org.fide.backend.Equivalencia</class>
+    <class>mx.org.fide.backend.EquivalenciaCampo</class>
+    <class>mx.org.fide.importacion.Importacion</class>
+    <class>mx.org.fide.importacion.ImportacionDetalle</class>
+    <class>mx.org.fide.importacion.DefinicionImportacion</class>
+    <class>mx.org.fide.importacion.DefinicionImportacionDetalle</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/administrax?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="ikaro75"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>

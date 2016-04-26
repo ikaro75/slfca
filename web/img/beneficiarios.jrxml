@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="beneficiarios" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1ca4211b-69aa-42cf-bcc6-cb66802e7749">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT top 500
+		fide_estado.estado
+		,fide_municipio.municipio
+     	,fide_beneficiario.poblacion
+		,COUNT(fide_beneficiario.clave_beneficiario) as total
+		,fide_beneficiario.clave_tipo_padron
+        FROM fide_beneficiario
+			left join fide_estado on fide_beneficiario.clave_estado=fide_estado.clave_estado
+			left join fide_municipio on fide_beneficiario.clave_municipio = fide_municipio.clave_municipio
+		GROUP BY fide_estado.estado,fide_municipio.municipio,fide_beneficiario.poblacion,fide_beneficiario.clave_tipo_padron]]>
+	</queryString>
+	<field name="estado" class="java.lang.String"/>
+	<field name="municipio" class="java.lang.String"/>
+	<field name="poblacion" class="java.lang.String"/>
+	<field name="total" class="java.lang.Integer"/>
+	<field name="clave_tipo_padron" class="java.lang.Integer"/>
+	<group name="estado">
+		<groupExpression><![CDATA[$F{estado}]]></groupExpression>
+		<groupHeader>
+			<band height="37">
+				<frame>
+					<reportElement mode="Opaque" x="-21" y="7" width="639" height="24" forecolor="#B89F7D" backcolor="#F2EBDF" uuid="58dafee0-b5bd-474d-87c5-0d8c23f7de68"/>
+					<rectangle>
+						<reportElement mode="Opaque" x="21" y="0" width="36" height="24" backcolor="#736343" uuid="14744e27-1b68-4ecd-baea-426f39ce25d3"/>
+						<graphicElement>
+							<pen lineWidth="0.0"/>
+						</graphicElement>
+					</rectangle>
+					<textField>
+						<reportElement style="SubTitle" x="68" y="0" width="561" height="24" forecolor="#736343" uuid="9578464a-557e-4b27-89d0-a05b152d7839"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<textField>
+					<reportElement style="SubTitle" x="639" y="7" width="249" height="20" uuid="abd19215-8d16-4870-8f4c-6f94e8550b67"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{municipio}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="37"/>
+		</groupFooter>
+	</group>
+	<group name="municipio">
+		<groupExpression><![CDATA[$F{municipio}]]></groupExpression>
+		<groupHeader>
+			<band height="30"/>
+		</groupHeader>
+	</group>
+	<group name="poblacion">
+		<groupExpression><![CDATA[$F{poblacion}]]></groupExpression>
+	</group>
+	<group name="total">
+		<groupExpression><![CDATA[$F{total}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<image>
+				<reportElement x="1" y="4" width="400" height="58" uuid="8ed4c203-566e-4f60-be2d-f2cd3e317573"/>
+				<imageExpression><![CDATA["C:\\Users\\luis.pelaez\\Documents\\NetBeansProjects\\slfca\\web\\img\\fide_banner_bak.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="701" y="54" width="100" height="50" uuid="8ad3acd0-0949-4fce-b008-57b125c91eee"/>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="623f8b4d-4fd3-40de-b304-a0fda3254fdb"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="802" height="15" forecolor="#736343" uuid="b317b45b-ae6f-479b-b5ee-3c77f051abce"/>
+				<text><![CDATA[clave_tipo_padron]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="e42d37f7-15b2-42f9-99db-e78f197fade5"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="802" height="15" uuid="d80a1838-ac17-4e11-9f54-5e9fcfdce4e6"/>
+					<textFieldExpression><![CDATA[$F{clave_tipo_padron}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="d832f2df-2d59-42e9-a786-1bd576ab290e"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="47" y="15" width="100" height="20" uuid="6e511946-6f69-4e59-b978-667c7e1a6c64"/>
+				<textFieldExpression><![CDATA[$V{estado_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="11f160e9-aaa3-446f-b6bf-04cb6efe29b7"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="deed8866-5a37-4807-a38b-f98882bc0144"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="9d471625-71b6-4ec5-bc7e-dd18fc79d12c"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="f00cb401-3a42-4c71-9b9b-ef97a2a0abee"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

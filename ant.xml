@@ -1,0 +1,908 @@
+
+<!DOCTYPE html>
+<html lang="en" class="devsite">
+  <head>
+    <meta charset="utf-8" />
+    <script src="/_static/js/script_head.js"></script>
+    <link rel="stylesheet" type="text/css" href="/_static/css/screen.css" />
+    <link rel="shortcut icon" href="/_static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/_static/images/apple-touch-icon.png">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script id="jqueryui" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+    <script src="//www.google.com/jsapi?key=AIzaSyCZfHRnq7tigC-COeQRmoa9Cxr0vbrK6xw"></script>
+    <script>
+      google.load('visualization', '1', {packages: ['table']});
+    </script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <!--[if lt IE 9]>
+    <script src="/_static/js/html5shim/html5.js"></script>
+    <![endif]-->
+
+    
+    <script>
+      google.load('search', '1', {language : 'en'});
+    </script>
+    
+
+    
+  <script type="text/javascript">
+    var contentTimer = new window.jstiming.Timer();
+
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'es';
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+  
+  <title>Uso de Apache Ant - Google App Engine &mdash; Google Developers</title>
+  
+  
+  
+    
+    
+    
+  
+
+
+    
+    
+
+  </head>
+  <body class="two-column docs">
+    
+    <div id="sandbar">
+      
+      <a href="/sandbar?q=&page_url=/appengine/docs/java/tools/ant"></a>
+      <div id="gc-googlebar"></div>
+      <img src="/_static/images/google-logo.png" style="display:none;"/>
+      
+    </div>
+    
+
+    
+    
+    <div class="kd-butterbar shown">
+      <span>Esta página se ha trasladado al sitio de desarrolladores de Google. ¡Te damos la bienvenida! <a href="/readme">Más información</a> <a href="#" class="kd-butterbar-dismiss">Ignorar</a></span>
+    </div>
+    
+
+    <div id="gc-wrapper" itemscope itemtype="http://schema.org/Article">
+      
+      <input id="gc-analytics" type="hidden" value="UA-24532603-1" />
+      
+
+      
+
+      <div id="gc-topnav">
+        <div>
+          <ul>
+            
+              
+            
+            <li class=""><a href="/">Inicio</a></li>
+            
+            <li class="active"><a href="/products/">Productos</a></li>
+            
+            <li class=""><a href="/events/">Eventos</a></li>
+            
+            <li class=""><a href="/showcase/">Escaparate</a></li>
+            
+            <li class=""><a href="/live/">Live</a></li>
+            
+            <li class=""><a href="/groups/">Grupos</a></li>
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+
+      
+      
+      
+        <div id="gc-appbar">
+          
+          
+<h1>
+
+  <a href="/appengine/">Google App Engine</a>
+  <div class="plusone-container">
+    <div class="g-plusone"
+      data-href="https://developers.google.com/appengine/"
+      data-size="medium"
+      data-source="google:developers"></div>
+  </div>
+
+
+<div style="float:right;">
+  
+  <a href="" class="google-feedback" data-p="70425" data-b="Docs-actual" data-context="">Comentar este documento</a>
+</div>
+
+
+
+
+
+</h1>
+
+          
+        </div>
+      
+      
+
+      
+      <div id="gc-main">
+        
+      
+      
+      <div id="gc-sidebar">
+        
+
+  
+
+
+
+  <nav class="gc-toc"><ul><li class=""><a href="/appengine/downloads" data-title="Descargas"><span>Descargas</span></a></li><li class=""><a href="/appengine/tools_tips" data-title="Herramientas y consejos"><span>Herramientas y consejos</span></a></li><li class=""><a href="http://code.google.com/status/appengine" data-title="Estado del sistema"><span>Estado del sistema</span></a></li><li class=""><a href="http://code.google.com/p/googleappengine/issues/list" data-title="Seguimiento de incidencias"><span>Seguimiento de incidencias</span></a></li><li class=""><a href="/appengine/business" data-title="App Engine for Business"><span>App Engine for Business</span></a></li></ul><hr/><ul><li class=""><span class="tlw-title" data-title="Introducción">Introducción</span><ul><li class=""><a href="/appengine/docs/whatisgoogleappengine" data-title="¿Qué es Google App Engine?"><span>¿Qué es Google App Engine?</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted" data-title="Java"><span>Java</span></a><ul><li class=""><a href="/appengine/docs/java/gettingstarted/introduction" data-title="Introducción"><span>Introducción</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/installing" data-title="Instalación del SDK de Java"><span>Instalación del SDK de Java</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/creating" data-title="Creación de un proyecto"><span>Creación de un proyecto</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/usingusers" data-title="Uso del servicio de usuarios"><span>Uso del servicio de usuarios</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/usingjsps" data-title="Uso de JSP"><span>Uso de JSP</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/usingdatastore" data-title="Uso del almacén de datos a través de JDO"><span>Uso del almacén de datos a través de JDO</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/staticfiles" data-title="Uso de archivos estáticos"><span>Uso de archivos estáticos</span></a></li><li class=""><a href="/appengine/docs/java/gettingstarted/uploading" data-title="Subida de aplicaciones"><span>Subida de aplicaciones</span></a></li></ul></li><li class=""><a href="/appengine/docs/python/gettingstarted" data-title="Python"><span>Python</span></a><ul><li class=""><a href="/appengine/docs/python/gettingstarted/introduction" data-title="Introducción"><span>Introducción</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/devenvironment" data-title="El entorno de desarrollo"><span>El entorno de desarrollo</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/helloworld" data-title="Hello, World!"><span>Hello, World!</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/usingwebapp" data-title="Uso del marco de webapp"><span>Uso del marco de webapp</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/usingusers" data-title="Uso del servicio de usuarios"><span>Uso del servicio de usuarios</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/handlingforms" data-title="Uso de formularios con webapp"><span>Uso de formularios con webapp</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/usingdatastore" data-title="Uso del almacén de datos"><span>Uso del almacén de datos</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/templates" data-title="Uso de plantillas"><span>Uso de plantillas</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/staticfiles" data-title="Uso de archivos estáticos"><span>Uso de archivos estáticos</span></a></li><li class=""><a href="/appengine/docs/python/gettingstarted/uploading" data-title="Subida de aplicaciones"><span>Subida de aplicaciones</span></a></li></ul></li></ul></li></ul><hr/><ul><li class=""><span class="tlw-title" data-title="Java">Java</span><ul><li class=""><a href="/appengine/docs/java/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/runtime" data-title="Entorno de servlet"><span>Entorno de servlet</span></a></li><li class=""><a href="/appengine/docs/java/datastore" data-title="Almacenamiento de datos"><span>Almacenamiento de datos</span></a><ul><li class=""><a href="/appengine/docs/java/datastore/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/datastore/entities" data-title="Entidades"><span>Entidades</span></a></li><li class=""><a href="/appengine/docs/java/datastore/queries" data-title="Consultas"><span>Consultas</span></a></li><li class=""><a href="/appengine/docs/java/datastore/transactions" data-title="Transacciones"><span>Transacciones</span></a></li><li class=""><a href="/appengine/docs/java/datastore/hr" data-title="Elección de un almacén de datos"><span>Elección de un almacén de datos</span></a></li><li class=""><a href="/appengine/docs/java/datastore/hr/overview" data-title="Uso del almacén de datos de duplicación con alta disponibilidad"><span>Uso del almacén de datos de duplicación con alta disponibilidad</span></a></li><li class=""><a href="/appengine/docs/java/datastore/metadataqueries" data-title="Consultas de metadatos"><span>Consultas de metadatos</span></a></li><li class=""><a href="/appengine/docs/java/datastore/stats" data-title="Estadísticas"><span>Estadísticas</span></a></li><li class=""><a href="/appengine/docs/java/datastore/async" data-title="API de servicio asíncrono"><span>API de servicio asíncrono</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo" data-title="JDO"><span>JDO</span></a><ul><li class=""><a href="/appengine/docs/java/datastore/jdo/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/dataclasses" data-title="Definición de clases de datos con JDO"><span>Definición de clases de datos con JDO</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/creatinggettinganddeletingdata" data-title="Creación, obtención y eliminación de datos en JDO"><span>Creación, obtención y eliminación de datos en JDO</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/relationships" data-title="Relaciones de entidad en JDO"><span>Relaciones de entidad en JDO</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/queries" data-title="Consultas en JDO"><span>Consultas en JDO</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/datastore/jpa" data-title="JPA"><span>JPA</span></a><ul><li class=""><a href="/appengine/docs/java/datastore/jpa/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/datastore/package-summary" data-title="Referencia sobre Java"><span>Referencia sobre Java</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/apis" data-title="Servicios"><span>Servicios</span></a><ul><li class=""><a href="/appengine/docs/java/blobstore" data-title="Almacén de blob"><span>Almacén de blob</span></a><ul><li class=""><a href="/appengine/docs/java/blobstore/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/blobstore/package-summary" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/java/datastore" data-title="Datastore"><span>Datastore</span></a><ul><li class=""><a href="/appengine/docs/java/datastore/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/datastore/entities" data-title="Entidades"><span>Entidades</span></a></li><li class=""><a href="/appengine/docs/java/datastore/queries" data-title="Consultas"><span>Consultas</span></a></li><li class=""><a href="/appengine/docs/java/datastore/transactions" data-title="Transacciones"><span>Transacciones</span></a></li><li class=""><a href="/appengine/docs/java/datastore/hr" data-title="Elección de un almacén de datos"><span>Elección de un almacén de datos</span></a></li><li class=""><a href="/appengine/docs/java/datastore/hr/overview" data-title="Uso del almacén de datos de duplicación con alta disponibilidad"><span>Uso del almacén de datos de duplicación con alta disponibilidad</span></a></li><li class=""><a href="/appengine/docs/java/datastore/metadataqueries" data-title="Consultas de metadatos"><span>Consultas de metadatos</span></a></li><li class=""><a href="/appengine/docs/java/datastore/stats" data-title="Estadísticas"><span>Estadísticas</span></a></li><li class=""><a href="/appengine/docs/java/datastore/async" data-title="API de servicio asíncrono"><span>API de servicio asíncrono</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo" data-title="JDO"><span>JDO</span></a><ul><li class=""><a href="/appengine/docs/java/datastore/jdo/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/dataclasses" data-title="Definición de clases de datos con JDO"><span>Definición de clases de datos con JDO</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/creatinggettinganddeletingdata" data-title="Creación, obtención y eliminación de datos en JDO"><span>Creación, obtención y eliminación de datos en JDO</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/relationships" data-title="Relaciones de entidad en JDO"><span>Relaciones de entidad en JDO</span></a></li><li class=""><a href="/appengine/docs/java/datastore/jdo/queries" data-title="Consultas en JDO"><span>Consultas en JDO</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/datastore/jpa" data-title="JPA"><span>JPA</span></a><ul><li class=""><a href="/appengine/docs/java/datastore/jpa/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/datastore/package-summary" data-title="Referencia sobre Java"><span>Referencia sobre Java</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/images" data-title="Imágenes"><span>Imágenes</span></a><ul><li class=""><a href="/appengine/docs/java/images/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/images/package-summary" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/mail" data-title="Correo"><span>Correo</span></a><ul><li class=""><a href="/appengine/docs/java/mail/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/mail/usingjavamail" data-title="Uso de JavaMail para enviar correo"><span>Uso de JavaMail para enviar correo</span></a></li><li class=""><a href="/appengine/docs/java/mail/receiving" data-title="Recepción de correo"><span>Recepción de correo</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/mail/package-summary" data-title="API de nivel inferior"><span>API de nivel inferior</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/memcache" data-title="Memcache"><span>Memcache</span></a><ul><li class=""><a href="/appengine/docs/java/memcache/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/memcache/usingjcache" data-title="Uso de JCache"><span>Uso de JCache</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/memcache/package-summary" data-title="API de nivel inferior"><span>API de nivel inferior</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/multitenancy" data-title="Arquitectura multicliente"><span>Arquitectura multicliente</span></a><ul><li class=""><a href="/appengine/docs/java/multitenancy/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/multitenancy/multitenancy" data-title="Arquitectura multicliente con espacios de nombre"><span>Arquitectura multicliente con espacios de nombre</span></a></li><li class=""><a href="/appengine/docs/java/multitenancy/namespaces" data-title="Otros usos de los espacios de nombre"><span>Otros usos de los espacios de nombre</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/NamespaceManager" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/oauth" data-title="OAuth"><span>OAuth</span></a><ul><li class=""><a href="/appengine/docs/java/oauth/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/oauth/package-summary" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/taskqueue" data-title="Colas de tareas"><span>Colas de tareas</span></a><ul><li class=""><a href="/appengine/docs/java/taskqueue/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/labs/taskqueue/package-summary" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/urlfetch" data-title="Extracción de URL"><span>Extracción de URL</span></a><ul><li class=""><a href="/appengine/docs/java/urlfetch/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/urlfetch/usingjavanet" data-title="Uso de java.net"><span>Uso de java.net</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/urlfetch/package-summary" data-title="API de nivel inferior"><span>API de nivel inferior</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/users" data-title="Usuarios"><span>Usuarios</span></a><ul><li class=""><a href="/appengine/docs/java/users/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/users/package-summary" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/xmpp" data-title="XMPP"><span>XMPP</span></a><ul><li class=""><a href="/appengine/docs/java/xmpp/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/java/javadoc/com/google/appengine/api/xmpp/package-summary" data-title="Referencia del API"><span>Referencia del API</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/java/javadoc" data-title="Referencia de Javadoc"><span>Referencia de Javadoc</span></a></li><li class=""><a href="/appengine/docs/java/jrewhitelist" data-title="Accesos permitidos a la clase de JRE"><span>Accesos permitidos a la clase de JRE</span></a></li><li class=""><a href="/appengine/docs/java/config" data-title="Configuración"><span>Configuración</span></a><ul><li class=""><a href="/appengine/docs/java/config/webxml" data-title="Descriptor de implementación"><span>Descriptor de implementación</span></a></li><li class=""><a href="/appengine/docs/java/config/appconfig" data-title="Configuración de aplicaciones"><span>Configuración de aplicaciones</span></a></li><li class=""><a href="/appengine/docs/java/config/indexconfig" data-title="Configuración de índices"><span>Configuración de índices</span></a></li><li class=""><a href="/appengine/docs/java/config/cron" data-title="Tareas programadas"><span>Tareas programadas</span></a></li><li class=""><a href="/appengine/docs/java/config/queue" data-title="Configuración de colas de tareas"><span>Configuración de colas de tareas</span></a></li><li class=""><a href="/appengine/docs/java/config/dos" data-title="Configuración de la protección contra ataques por denegación de servicio"><span>Configuración de la protección contra ataques por denegación de servicio</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/configyaml" data-title="Configuración de YAML"><span>Configuración de YAML</span></a><ul><li class=""><a href="/appengine/docs/java/configyaml/appconfig_yaml" data-title="Configuración de aplicaciones a través de YAML"><span>Configuración de aplicaciones a través de YAML</span></a></li><li class=""><a href="/appengine/docs/java/configyaml/indexconfig" data-title="Configuración de índices"><span>Configuración de índices</span></a></li><li class=""><a href="/appengine/docs/java/configyaml/cron" data-title="Tareas programadas"><span>Tareas programadas</span></a></li><li class=""><a href="/appengine/docs/java/configyaml/queue" data-title="Configuración de colas de tareas"><span>Configuración de colas de tareas</span></a></li><li class=""><a href="/appengine/docs/java/configyaml/dos" data-title="Configuración de la protección contra ataques por denegación de servicio"><span>Configuración de la protección contra ataques por denegación de servicio</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/tools" data-title="Herramientas"><span>Herramientas</span></a><ul><li class=""><a href="/appengine/docs/java/tools/devserver" data-title="Servidor de desarrollo"><span>Servidor de desarrollo</span></a></li><li class=""><a href="/appengine/docs/java/tools/uploadinganapp" data-title="Subida y administración"><span>Subida y administración</span></a></li><li class=""><a href="/appengine/docs/java/tools/eclipse" data-title="Complemento de Google para Eclipse"><span>Complemento de Google para Eclipse</span></a></li><li class=""><a href="/appengine/docs/java/tools/ant" data-title="Uso de Apache Ant"><span>Uso de Apache Ant</span></a></li><li class=""><a href="/appengine/docs/java/tools/localunittesting" data-title="Pruebas de la unidad local"><span>Pruebas de la unidad local</span></a><ul><li class=""><a href="/appengine/docs/java/tools/localunittesting/javadoc" data-title="Pruebas de Javadoc"><span>Pruebas de Javadoc</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/tools/appstats" data-title="Appstats"><span>Appstats</span></a></li></ul></li><li class=""><a href="/appengine/docs/java/howto" data-title="Instrucciones"><span>Instrucciones</span></a><ul><li class=""><a href="/appengine/docs/java/howto/maintenance" data-title="Gestión de los periodos de mantenimiento programados"><span>Gestión de los periodos de mantenimiento programados</span></a></li></ul></li></ul></li></ul><hr/><ul><li class=""><span class="tlw-title" data-title="Python">Python</span><ul><li class=""><a href="/appengine/docs/python/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/runtime" data-title="Entorno CGI"><span>Entorno CGI</span></a></li><li class=""><a href="/appengine/docs/python/datastore" data-title="Almacenamiento de datos"><span>Almacenamiento de datos</span></a><ul><li class=""><a href="/appengine/docs/python/datastore/overview" data-title="Aspectos generales del almacén de datos"><span>Aspectos generales del almacén de datos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/entities" data-title="Entidades"><span>Entidades</span></a></li><li class=""><a href="/appengine/docs/python/datastore/queries" data-title="Consultas"><span>Consultas</span></a></li><li class=""><a href="/appengine/docs/python/datastore/transactions" data-title="Transacciones"><span>Transacciones</span></a></li><li class=""><a href="/appengine/docs/python/datastore/datamodeling" data-title="Modelos de datos"><span>Modelos de datos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/gqlreference" data-title="Referencia de GQL"><span>Referencia de GQL</span></a></li><li class=""><a href="/appengine/docs/python/datastore/hr" data-title="Elección de un almacén de datos"><span>Elección de un almacén de datos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/hr/overview" data-title="Uso del almacén de datos de replicación con alta disponibilidad"><span>Uso del almacén de datos de replicación con alta disponibilidad</span></a></li><li class=""><a href="/appengine/docs/python/datastore/metadataqueries" data-title="Consultas de metadatos"><span>Consultas de metadatos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/stats" data-title="Estadísticas"><span>Estadísticas</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/datastore/typesandpropertyclasses" data-title="Tipos y clases de propiedades"><span>Tipos y clases de propiedades</span></a></li><li class=""><a href="/appengine/docs/python/datastore/gqlreference" data-title="Referencia de GQL"><span>Referencia de GQL</span></a></li><li class=""><a href="/appengine/docs/python/datastore/modelclass" data-title="Model"><span>Model</span></a></li><li class=""><a href="/appengine/docs/python/datastore/expandoclass" data-title="Expando"><span>Expando</span></a></li><li class=""><a href="/appengine/docs/python/datastore/polymodelclass" data-title="PolyModel"><span>PolyModel</span></a></li><li class=""><a href="/appengine/docs/python/datastore/propertyclass" data-title="Property"><span>Property</span></a></li><li class=""><a href="/appengine/docs/python/datastore/queryclass" data-title="Query"><span>Query</span></a></li><li class=""><a href="/appengine/docs/python/datastore/gqlqueryclass" data-title="GqlQuery"><span>GqlQuery</span></a></li><li class=""><a href="/appengine/docs/python/datastore/metadataqueryclass" data-title="Consulta de metadatos"><span>Consulta de metadatos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/keyclass" data-title="Key"><span>Key</span></a></li><li class=""><a href="/appengine/docs/python/datastore/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/datastore/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/apis" data-title="Servicios"><span>Servicios</span></a><ul><li class=""><a href="/appengine/docs/python/blobstore" data-title="Almacén de blob"><span>Almacén de blob</span></a><ul><li class=""><a href="/appengine/docs/python/blobstore/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/blobstore/blobinfoclass" data-title="BlobInfo"><span>BlobInfo</span></a></li><li class=""><a href="/appengine/docs/python/blobstore/blobkeyclass" data-title="BlobKey"><span>BlobKey</span></a></li><li class=""><a href="/appengine/docs/python/blobstore/blobreaderclass" data-title="BlobReader"><span>BlobReader</span></a></li><li class=""><a href="/appengine/docs/python/blobstore/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/blobstore/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/datastore" data-title="Datastore"><span>Datastore</span></a><ul><li class=""><a href="/appengine/docs/python/datastore/overview" data-title="Aspectos generales del almacén de datos"><span>Aspectos generales del almacén de datos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/entities" data-title="Entidades"><span>Entidades</span></a></li><li class=""><a href="/appengine/docs/python/datastore/queries" data-title="Consultas"><span>Consultas</span></a></li><li class=""><a href="/appengine/docs/python/datastore/transactions" data-title="Transacciones"><span>Transacciones</span></a></li><li class=""><a href="/appengine/docs/python/datastore/datamodeling" data-title="Modelos de datos"><span>Modelos de datos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/gqlreference" data-title="Referencia de GQL"><span>Referencia de GQL</span></a></li><li class=""><a href="/appengine/docs/python/datastore/hr" data-title="Elección de un almacén de datos"><span>Elección de un almacén de datos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/hr/overview" data-title="Uso del almacén de datos de replicación con alta disponibilidad"><span>Uso del almacén de datos de replicación con alta disponibilidad</span></a></li><li class=""><a href="/appengine/docs/python/datastore/metadataqueries" data-title="Consultas de metadatos"><span>Consultas de metadatos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/stats" data-title="Estadísticas"><span>Estadísticas</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/datastore/typesandpropertyclasses" data-title="Tipos y clases de propiedades"><span>Tipos y clases de propiedades</span></a></li><li class=""><a href="/appengine/docs/python/datastore/gqlreference" data-title="Referencia de GQL"><span>Referencia de GQL</span></a></li><li class=""><a href="/appengine/docs/python/datastore/modelclass" data-title="Model"><span>Model</span></a></li><li class=""><a href="/appengine/docs/python/datastore/expandoclass" data-title="Expando"><span>Expando</span></a></li><li class=""><a href="/appengine/docs/python/datastore/polymodelclass" data-title="PolyModel"><span>PolyModel</span></a></li><li class=""><a href="/appengine/docs/python/datastore/propertyclass" data-title="Property"><span>Property</span></a></li><li class=""><a href="/appengine/docs/python/datastore/queryclass" data-title="Query"><span>Query</span></a></li><li class=""><a href="/appengine/docs/python/datastore/gqlqueryclass" data-title="GqlQuery"><span>GqlQuery</span></a></li><li class=""><a href="/appengine/docs/python/datastore/metadataqueryclass" data-title="Consulta de metadatos"><span>Consulta de metadatos</span></a></li><li class=""><a href="/appengine/docs/python/datastore/keyclass" data-title="Key"><span>Key</span></a></li><li class=""><a href="/appengine/docs/python/datastore/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/datastore/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/images" data-title="Imágenes"><span>Imágenes</span></a><ul><li class=""><a href="/appengine/docs/python/images/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/images/installingPIL" data-title="Instalación de la biblioteca de imágenes de Python (PIL)"><span>Instalación de la biblioteca de imágenes de Python (PIL)</span></a></li><li class=""><a href="/appengine/docs/python/images/usingimages" data-title="Uso del API de imágenes"><span>Uso del API de imágenes</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/images/imageclass" data-title="Image"><span>Image</span></a></li><li class=""><a href="/appengine/docs/python/images/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/images/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/mail" data-title="Correo"><span>Correo</span></a><ul><li class=""><a href="/appengine/docs/python/mail/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/mail/sendingmail" data-title="Envío de correo"><span>Envío de correo</span></a></li><li class=""><a href="/appengine/docs/python/mail/receivingmail" data-title="Recepción de correo"><span>Recepción de correo</span></a></li><li class=""><a href="/appengine/docs/python/mail/attachments" data-title="Archivos adjuntos"><span>Archivos adjuntos</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/mail/emailmessageclass" data-title="EmailMessage"><span>EmailMessage</span></a></li><li class=""><a href="/appengine/docs/python/mail/emailmessagefields" data-title="Campos del mensaje"><span>Campos del mensaje</span></a></li><li class=""><a href="/appengine/docs/python/mail/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/mail/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/memcache" data-title="Memcache"><span>Memcache</span></a><ul><li class=""><a href="/appengine/docs/python/memcache/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/memcache/usingmemcache" data-title="Uso de Memcache"><span>Uso de Memcache</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/memcache/clientclass" data-title="Client"><span>Client</span></a></li><li class=""><a href="/appengine/docs/python/memcache/functions" data-title="Funciones"><span>Funciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/multitenancy" data-title="Multicliente"><span>Multicliente</span></a><ul><li class=""><a href="/appengine/docs/python/multitenancy/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/multitenancy/multitenancy" data-title="Arquitectura multicliente con espacios de nombre"><span>Arquitectura multicliente con espacios de nombre</span></a></li><li class=""><a href="/appengine/docs/python/multitenancy/namespaces" data-title="Otros usos de los espacios de nombre"><span>Otros usos de los espacios de nombre</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/multitenancy/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/multitenancy/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/oauth" data-title="OAuth"><span>OAuth</span></a><ul><li class=""><a href="/appengine/docs/python/oauth/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/oauth/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/oauth/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/taskqueue" data-title="Colas de tareas"><span>Colas de tareas</span></a><ul><li class=""><a href="/appengine/docs/python/taskqueue/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/taskqueue/tasks" data-title="Clase Task"><span>Clase Task</span></a></li><li class=""><a href="/appengine/docs/python/taskqueue/queues" data-title="Clase Queue"><span>Clase Queue</span></a></li><li class=""><a href="/appengine/docs/python/taskqueue/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/taskqueue/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/urlfetch" data-title="Extracción de URL"><span>Extracción de URL</span></a><ul><li class=""><a href="/appengine/docs/python/urlfetch/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/urlfetch/fetchfunction" data-title="La función fetch"><span>La función fetch</span></a></li><li class=""><a href="/appengine/docs/python/urlfetch/asynchronousrequests" data-title="Solicitudes asíncronas"><span>Solicitudes asíncronas</span></a></li><li class=""><a href="/appengine/docs/python/urlfetch/responseobjects" data-title="Objetos de respuesta"><span>Objetos de respuesta</span></a></li><li class=""><a href="/appengine/docs/python/urlfetch/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/users" data-title="Usuarios"><span>Usuarios</span></a><ul><li class=""><a href="/appengine/docs/python/users/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/users/userobjects" data-title="Objetos User"><span>Objetos User</span></a></li><li class=""><a href="/appengine/docs/python/users/loginurls" data-title="Direcciones URL de acceso"><span>Direcciones URL de acceso</span></a></li><li class=""><a href="/appengine/docs/python/users/adminusers" data-title="Usuarios administradores"><span>Usuarios administradores</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/users/userclass" data-title="User"><span>User</span></a></li><li class=""><a href="/appengine/docs/python/users/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/users/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/xmpp" data-title="XMPP"><span>XMPP</span></a><ul><li class=""><a href="/appengine/docs/python/xmpp/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/xmpp/functions" data-title="Funciones"><span>Funciones</span></a></li><li class=""><a href="/appengine/docs/python/xmpp/messageclass" data-title="Mensaje"><span>Mensaje</span></a></li><li class=""><a href="/appengine/docs/python/xmpp/exceptions" data-title="Excepciones"><span>Excepciones</span></a></li></ul></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/config" data-title="Configuración"><span>Configuración</span></a><ul><li class=""><a href="/appengine/docs/python/config/appconfig" data-title="Configuración de aplicaciones"><span>Configuración de aplicaciones</span></a></li><li class=""><a href="/appengine/docs/python/config/indexconfig" data-title="Configuración de índices"><span>Configuración de índices</span></a></li><li class=""><a href="/appengine/docs/python/config/cron" data-title="Tareas programadas"><span>Tareas programadas</span></a></li><li class=""><a href="/appengine/docs/python/config/queue" data-title="Configuración de la cola de tareas"><span>Configuración de la cola de tareas</span></a></li><li class=""><a href="/appengine/docs/python/config/dos" data-title="Configuración de la protección DoS"><span>Configuración de la protección DoS</span></a></li></ul></li><li class=""><a href="/appengine/docs/python/tools" data-title="Herramientas"><span>Herramientas</span></a><ul><li class=""><a href="/appengine/docs/python/tools/devserver" data-title="Servidor de desarrollo"><span>Servidor de desarrollo</span></a></li><li class=""><a href="/appengine/docs/python/tools/uploadinganapp" data-title="Subida y administración"><span>Subida y administración</span></a></li><li class=""><a href="/appengine/docs/python/tools/uploadingdata" data-title="Subida y descarga de datos"><span>Subida y descarga de datos</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp" data-title="El marco webapp"><span>El marco webapp</span></a><ul><li class=""><a href="/appengine/docs/python/tools/webapp/overview" data-title="Aspectos generales"><span>Aspectos generales</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/running" data-title="Ejecución de la aplicación"><span>Ejecución de la aplicación</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/requesthandlers" data-title="Controladores de solicitudes"><span>Controladores de solicitudes</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/requestdata" data-title="Datos de solicitud"><span>Datos de solicitud</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/buildingtheresponse" data-title="Creación de la respuesta"><span>Creación de la respuesta</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/redirects" data-title="Redireccionamientos, cabeceras y códigos de estado"><span>Redireccionamientos, cabeceras y códigos de estado</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/blobstorehandlers" data-title="Controladores del almacén de blob"><span>Controladores del almacén de blob</span></a></li><li class=""><span class="tlw-title" data-title="Referencia">Referencia</span><ul><li class=""><a href="/appengine/docs/python/tools/webapp/requestclass" data-title="Request"><span>Request</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/responseclass" data-title="Response"><span>Response</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/requesthandlerclass" data-title="RequestHandler"><span>RequestHandler</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/wsgiapplicationclass" data-title="WSGIApplication"><span>WSGIApplication</span></a></li><li class=""><a href="/appengine/docs/python/tools/webapp/utilmodule" data-title="Funciones de utilidades"><span>Funciones de utilidades</span></a></li></ul></li></ul></li><li class=""><a href="/appengine/docs/python/tools/appstats" data-title="Appstats"><span>Appstats</span></a></li><li class=""><a href="/appengine/docs/python/tools/libraries" data-title="Bibliotecas de terceros"><span>Bibliotecas de terceros</span></a></li></ul></li><li class=""><a href="/appengine/docs/python/howto" data-title="Instrucciones"><span>Instrucciones</span></a><ul><li class=""><a href="/appengine/docs/python/howto/usinggdataservices" data-title="Servicios de datos de Google"><span>Servicios de datos de Google</span></a></li><li class=""><a href="/appengine/docs/python/howto/maintenance" data-title="Gestión de los periodos de mantenimiento programados"><span>Gestión de los periodos de mantenimiento programados</span></a></li></ul></li></ul></li></ul><hr/><ul><li class=""><span class="tlw-title" data-title="Administración de tu aplicación">Administración de tu aplicación</span><ul><li class=""><a href="/appengine/docs/theadminconsole" data-title="La Consola del administrador"><span>La Consola del administrador</span></a></li><li class=""><a href="/appengine/docs/quotas" data-title="Cuotas"><span>Cuotas</span></a></li><li class=""><a href="/appengine/docs/billing" data-title="Facturación"><span>Facturación</span></a></li><li class=""><a href="/appengine/docs/domain" data-title="Uso de un dominio personalizado"><span>Uso de un dominio personalizado</span></a></li></ul></li></ul><hr/><ul><li class=""><span class="tlw-title" data-title="Recursos">Recursos</span><ul><li class=""><a href="/appengine/kb" data-title="Preguntas frecuentes"><span>Preguntas frecuentes</span></a></li><li class=""><a href="/appengine/articles" data-title="Artículos"><span>Artículos</span></a></li><li class=""><a href="http://appengine-cookbook.appspot.com/" data-title="Libro de recetas"><span>Libro de recetas</span></a></li><li class=""><a href="http://code.google.com/p/googleappengine/" data-title="Código de SDK"><span>Código de SDK</span></a></li><li class=""><a href="http://code.google.com/p/datanucleus-appengine/" data-title="Código de JDO/JPA"><span>Código de JDO/JPA</span></a></li><li class=""><a href="http://code.google.com/p/google-app-engine-samples/" data-title="Código de aplicaciones de muestra"><span>Código de aplicaciones de muestra</span></a></li><li class=""><span class="tlw-title" data-title="Código de la aplicación de inicio">Código de la aplicación de inicio</span><ul><li class=""><a href="http://code.google.com/p/google-appengine-mac-launcher/" data-title="Mac"><span>Mac</span></a></li><li class=""><a href="http://code.google.com/p/google-appengine-wx-launcher/" data-title="Windows/wx"><span>Windows/wx</span></a></li></ul></li><li class=""><a href="/appengine/community" data-title="Grupos de debate"><span>Grupos de debate</span></a></li></ul></li></ul><hr/><ul><li class=""><a href="/appengine/docs/roadmap" data-title="Guía del producto"><span>Guía del producto</span></a></li><li class=""><a href="http://code.google.com/p/googleappengine/wiki/SdkReleaseNotes" data-title="Notas de la versión: Python"><span>Notas de la versión: Python</span></a></li><li class=""><a href="http://code.google.com/p/googleappengine/wiki/SdkForJavaReleaseNotes" data-title="Notas de la versión: Java"><span>Notas de la versión: Java</span></a></li><li class=""><a href="/appengine/docs/revision_history" data-title="Historial de revisiones"><span>Historial de revisiones</span></a></li><li class=""><a href="/appengine/terms" data-title="Terms of Service"><span>Terms of Service</span></a></li></ul></nav>
+
+
+
+      </div>
+      
+
+      <div id="gc-content"
+           
+           
+           >
+        
+        <div>
+          
+  
+  <h1 itemprop="name" class="page-title" >Uso de Apache Ant</h1>
+  
+  <div itemprop="articleBody">
+  
+
+
+<p>Si no utilizas <a href="http://www.eclipse.org/">Eclipse</a> ni el <a href="/appengine/docs/java/tools/eclipse">complemento de Google para Eclipse</a>, probablemente prefieras otra forma de administrar el proceso de compilación y de prueba de tu aplicación App Engine. <a href="http://ant.apache.org/">Apache Ant</a> facilita la administración de tu proyecto desde el símbolo del sistema o desde otros entornos de desarrollo integrados (IDE) compatibles con Ant. El SDK Java incluye un conjunto de macros de Ant para realizar tareas de desarrollo de App Engine, entre las que se incluyen el inicio del servidor de desarrollo y la subida de la aplicación a App Engine.</p>
+
+<p>En este artículo se describe un archivo de compilación de Ant que sirve para la mayoría de los proyectos. Para omitir la descripción y consultar directamente el archivo completo para copiarlo y pegarlo, consulta el <a href="#The_Complete_Build_File">archivo de compilación completo</a>.</p>
+
+<ul>
+  <li><a href="#Installing_Apache_Ant">Instalación de Ant</a></li>
+  <li><a href="#The_Project_Directory">Directorio del proyecto</a></li>
+  <li><a href="#Creating_the_Build_File">Creación del archivo de compilación</a></li>
+  <li><a href="#Defining_the_Class_Path">Definición de la ruta de clase</a></li>
+  <li><a href="#Enhancing_JDO_Classes">Mejora de las clases JDO</a></li>
+  <li><a href="#Running_the_Development_Server">Ejecución del servidor de desarrollo</a></li>
+  <li><a href="#Uploading_and_Other_AppCfg_Tasks">Subida y otras tareas de AppCfg</a></li>
+  <li><a href="#The_Complete_Build_File">El archivo de compilación completo</a></li>
+</ul>
+
+
+<h2 id="Installing_Apache_Ant">Instalación de Ant</h2>
+
+<p>Si aún no has instalado Ant en tu sistema, visita el <a href="http://ant.apache.org/">sitio web de Apache Ant</a> para descargarlo e instalarlo.</p>
+
+<p>Cuando Ant esté instalado y el comando <code>ant</code> se encuentre en la ruta de comandos, puedes ejecutar el siguiente comando para comprobar que funciona y para ver qué versión está instalada:</p>
+
+<pre>ant -version</pre>
+
+
+<h2 id="The_Project_Directory">Directorio del proyecto</h2>
+
+<p>Tal y como se describe en la <a href="/appengine/docs/java/gettingstarted">Guía de introducción</a>, el proyecto de App Engine debe generar una estructura de directorio que utilice el formato estándar <a href="http://java.sun.com/j2ee/tutorial/1_3-fcs/doc/WCC3.html">WAR</a> para aplicaciones web Java. (Los archivos del archivo WAR aún no son compatibles con el SDK).</p>
+
+<p>Para estas instrucciones, ubicaremos todos los archivos relacionados con el proyecto en un único directorio denominado <code>Guestbook/</code> (para el proyecto del libro de visitas descrito en la <a href="/appengine/docs/java/gettingstarted">Guía de introducción</a>), junto con un subdirectorio denominado <code>src/</code> para el código fuente Java y otro subdirectorio denominado <code>war/</code> para los archivos de la aplicación terminada. El proceso de compilación compila el código fuente y coloca el código de bytes de Java compilado en la ubicación adecuada en <code>war/</code>. Puedes crear otros archivos para el WAR directamente en el directorio <code>war/</code>.</p>
+
+<p>El directorio completo del proyecto debería parecerse a esto:</p>
+
+<pre>
+Guestbook/
+  src/
+    <i>...Java source code...</i>
+    META-INF/
+      <i>...other configuration...</i>
+  war/
+    <i>...JSPs, images, data files...</i>
+    WEB-INF/
+      <i>...app configuration...</i>
+      classes/
+        <i>...compiled classes...</i>
+      lib/
+        <i>...JARs for libraries...</i>
+</pre>
+
+<p>Para crear esta estructura de directorio desde el símbolo del sistema, utiliza los comandos siguientes. Si utilizas Windows, cambia las barras inclinadas <code>/</code> de estas rutas por barras invertidas <code></code>. (Dentro del propio archivo de Ant, las rutas con barras inclinadas <code>/</code> funcionan en todos los sistemas operativos).</p>
+
+<pre>
+mkdir Guestbook
+cd Guestbook
+mkdir -p src/META-INF
+mkdir -p war/WEB-INF/classes
+mkdir -p war/WEB-INF/lib
+</pre>
+
+
+<h2 id="Creating_the_Build_File">Creación del archivo de compilación</h2>
+
+<p>En el directorio <code>Guestbook/</code>, crea un archivo llamado <code>build.xml</code> con el siguiente contenido:</p>
+
+<pre class="prettyprint">
+&lt;project&gt;
+  &lt;property name="sdk.dir" location="../appengine-java-sdk" />
+
+  &lt;import file="${sdk.dir}/config/user/ant-macros.xml" /&gt;
+
+&lt;/project&gt;
+</pre>
+
+<p>Este archivo de compilación aún no tiene ninguna función: no contiene ningún "destino" con instrucciones para realizar tareas. El archivo define dos propiedades de Ant, que utilizaremos cuando definamos destinos y rutas más adelante.</p>
+
+<p>La propiedad <code>sdk.dir</code> es la ruta al SDK Java de App Engine, el directorio <code>appengine-java-sdk</code> creado al descomprimir el archivo Zip del SDK. <code>"../appengine-java-sdk"</code> asume que este directorio está en el directorio principal por encima del directorio del proyecto. Ajusta este valor en caso necesario. (Las rutas están relacionadas con la ubicación del archivo <code>build.xml</code>).</p>
+
+<p>El elemento <code>&lt;import&gt;</code> carga un conjunto de macros de Ant para el desarrollo de App Engine incluido en el SDK Java de App Engine. Utilizaremos varias de estas macros más adelante.</p>
+
+
+<h2 id="Defining_the_Class_Path">Definición de la ruta de clase</h2>
+
+<p>Si compilas tus clases, la ruta de clase Java debe contener los JAR para el API de App Engine, así como otros JAR que puedas haber añadido al directorio <code>war/WEB-INF/lib/</code> del proyecto (como, por ejemplo, los JAR de JDO/JPA de DataNucleus). La aplicación puede acceder a las clases desde los JAR añadidos a este directorio. Además, los JAR del directorio <code>lib/shared/</code> del SDK están en la ruta de clase.</p>
+
+<p>Edita <code>build.xml</code> y añade las siguientes líneas antes de la etiqueta <code>&lt;/project&gt;</code> de cierre para definir la ruta de clase que contiene estos JAR:</p>
+
+<pre class="prettyprint">
+  &lt;path id="project.classpath"&gt;
+    &lt;pathelement path="war/WEB-INF/classes" /&gt;
+    &lt;fileset dir="war/WEB-INF/lib"&gt;
+      &lt;include name="**/*.jar" /&gt;
+    &lt;/fileset&gt;
+    &lt;fileset dir="${sdk.dir}/lib"&gt;
+      &lt;include name="shared/**/*.jar" /&gt;
+    &lt;/fileset&gt;
+  &lt;/path&gt;
+</pre>
+
+
+<h2 id="Copying_JARs">Copia de los JAR</h2>
+
+<p>La aplicación debe incluir <code>appengine-api-*.jar</code> (donde <code><i>*</i></code> representa un número de versión del API y del SDK), un JAR incluido en el SDK en el directorio <code>war/WEB-INF/lib/</code>. App Engine comprueba las clases de este JAR para determinar la versión del API que utiliza la aplicación. Si la aplicación utiliza las interfaces de JDO o de JPA en el almacén de datos de App Engine, ésta debe incluir la implementación de JDO/JPA en <code>war/WEB-INF/lib/</code>. Todos estos JAR se encuentran en el directorio <code>lib/user/</code> del SDK.</p>
+
+<p>Puedes copiar estos JAR en el WAR de forma manual. Sin embargo, es útil copiar estos JAR durante el proceso de compilación. De esta forma, se garantiza que la aplicación utilice las mismas versiones de estas interfaces que las que se incluyen en el SDK, aunque se actualice el SDK en otro momento.</p>
+
+<p>Todos los JAR deben estar en el directorio <code>war/WEB-INF/lib/</code>, no en subdirectorios. Este destino de Ant copia JAR frecuentemente desde <code>${sdk.dir}/lib/user/</code> a través del atributo <code>flatten="true"</code> de la tarea <code>copy</code> para que todos los JAR terminen en el mismo directorio.</p>
+
+<p>Edita <code>build.xml</code> y añade las siguientes líneas antes de la etiqueta <code>&lt/project&gt;</code> de cierre:</p>
+
+<pre class="prettyprint">
+  &lt;target name="copyjars"
+      description="Copies the App Engine JARs to the WAR."&gt;
+    &lt;copy
+        todir="war/WEB-INF/lib"
+        flatten="true"&gt;
+      &lt;fileset dir="${sdk.dir}/lib/user"&gt;
+        &lt;include name="**/*.jar" /&gt;
+      &lt;/fileset&gt;
+    &lt;/copy&gt;
+  &lt;/target&gt;
+</pre>
+
+<p>Esto crea un destino de compilación denominado <code>"copyjars"</code> que copia los JAR en la ubicación adecuada. Para probar este destino, asegúrate de que el directorio de trabajo actual sea el directorio de proyecto (<code>Guestbook/</code>) y, a continuación, ejecuta el siguiente comando:</p>
+
+<pre>ant copyjars</pre>
+
+<p>Comprueba el contenido de <code>war/WEB-INF/lib/</code> para asegurarte de que los JAR se encuentren allí.</p>
+
+
+<h2 id="Compiling_Source_Files">Compilación de archivos fuente</h2>
+
+<p>Edita <code>build.xml</code> y añade las siguientes líneas antes de la etiqueta <code>&lt/project&gt;</code> de cierre:</p>
+
+<pre class="prettyprint">
+  &lt;target name="compile" depends="copyjars"
+      description="Compiles Java source and copies other source files to the WAR."&gt;
+    &lt;mkdir dir="war/WEB-INF/classes" /&gt;
+    &lt;copy todir="war/WEB-INF/classes"&gt;
+      &lt;fileset dir="src"&gt;
+        &lt;exclude name="**/*.java" /&gt;
+      &lt;/fileset&gt;
+    &lt;/copy&gt;
+    &lt;javac
+        srcdir="src"
+        destdir="war/WEB-INF/classes"
+        classpathref="project.classpath"
+        debug="on" /&gt;
+  &lt;/target&gt;
+</pre>
+
+<p>Esto define un destino de compilación denominado <code>"compile"</code> que compila todos los archivos fuente Java en el directorio <code>src/</code> y almacena las clases compiladas en <code>war/WEB-INF/classes/</code>. Todos los demás archivos ubicados en <code>src/</code> como, por ejemplo, el directorio <code>META-INF/</code>, se copian textualmente en <code>war/WEB-INF/classes/</code>. El destino depende de <code>"copyjars"</code>, por lo que, en caso necesario, se compilan ambos destinos.</p>
+
+<p>Para compilar los archivos fuente del proyecto, ejecuta el siguiente comando:</p>
+
+<pre>ant compile</pre>
+
+
+<h2 id="Enhancing_JDO_Classes">Mejora de las clases JDO</h2>
+
+<p>En esta sección se describe cómo utilizar Ant para que tu proyecto admita la interfaz de objetos de datos Java (JDO) en el almacén de datos. Si tu proyecto no utiliza la interfaz de JDO, puedes <a href="#Running_the_Development_Server">pasar a la siguiente sección</a>.</p>
+
+<p>Tal y como se describe en la <a href="/appengine/docs/java/gettingstarted">Guía de introducción</a> y en la <a href="/appengine/docs/java/datastore">documentación del almacén de datos</a>, la interfaz de JDO permite almacenar instancias de tus clases en el almacén de datos y recuperarlas en otro momento como objetos. Describe cómo se almacenan y se recuperan las instancias a través de anotaciones Java en la definición de clase.</p>
+
+<p>Para que JDO vea las anotaciones, debes procesar el código de bytes de tus clases de datos después de compilarlas mediante una herramienta incluida en DataNucleus Access Platform, la implementación de JDO que se distribuye junto con App Engine. DataNucleus describe este proceso como una "mejora" de las clases.</p>
+
+<p>El SDK de App Engine incluye macros de Ant para mejorar las clases de datos JDO. La macro <code>&lt;enhance_war&gt;</code> mejora todas las clases de datos JDO del proyecto a través de la ruta de clase correcta de este. Para un control más exhaustivo, puedes utilizar la macro <code>&lt;enhance&gt;</code>.</p>
+
+<p>Edita <code>build.xml</code> y añade las siguientes líneas antes de la etiqueta <code>&lt/project&gt;</code> de cierre:</p>
+
+<pre class="prettyprint">
+  &lt;target name="datanucleusenhance" depends="compile"
+      description="Performs JDO enhancement on compiled data classes."&gt;
+    &lt;enhance_war war="war" /&gt;
+  &lt;/target&gt;
+</pre>
+
+<p>Este destino depende de <code>"compile"</code>, por lo que su creación asegura que las clases se hayan compilado y que estén actualizadas antes de realizar la tarea de mejora.</p>
+
+
+<h2 id="Running_the_Development_Server">Ejecución del servidor de desarrollo</h2>
+
+<p>Puedes ejecutar el servidor web de desarrollo a través de la macro de Ant. Al hacer que este destino dependa del destino <code>"datanucleusenhance"</code> (o del destino <code>"compile"</code> si no utilizas DataNucleus), puedes crear tu proyecto e iniciar el servidor a través de un sencillo comando.</p>
+
+<p>Edita <code>build.xml</code> y añade las siguientes líneas antes de la etiqueta <code>&lt/project&gt;</code> de cierre:</p>
+
+<pre class="prettyprint">
+  &lt;target name="runserver" depends="datanucleusenhance"
+      description="Starts the development server."&gt;
+    &lt;dev_appserver war="war" /&gt;
+  &lt;/target&gt;
+</pre>
+
+<p>Puedes asignar argumentos al servidor de desarrollo a través de atributos y de un elemento <code>&lt;options&gt;</code>. Por ejemplo, el siguiente destino inicia el servidor a través del puerto 8888 y permite la depuración de Java remota en el puerto 9999:</p>
+
+<pre class="prettyprint">
+  &lt;target name="runserver" depends="datanucleusenhance"
+      description="Starts the development server."&gt;
+    &lt;dev_appserver war="war" port="8888" &gt;
+      &lt;options&gt;
+        &lt;arg value="--jvm_flag=-Xdebug"/&gt;
+        &lt;arg value="--jvm_flag=-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=9999"/&gt;
+      &lt;/options&gt;
+    &lt;/dev_appserver&gt;
+  &lt;/target&gt;
+</pre>
+
+<p>Para crear el proyecto y ejecutar el servidor, utiliza el siguiente comando:</p>
+
+<pre>ant runserver</pre>
+
+<p>Para detener el servidor, pulsa las teclas Control+C.</p>
+
+
+<h2 id="Uploading_and_Other_AppCfg_Tasks">Subida y otras tareas de AppCfg</h2>
+
+<p>Puedes definir tareas de Ant para subir la aplicación a App Engine y realizar otras acciones que ofrezca <a href="/appengine/docs/java/tools/uploadinganapp">AppCfg</a>.</p>
+
+<p>La macro <code>&lt;appcfg&gt;</code> adopta el nombre de la acción como el atributo <code>action</code> y la ruta al WAR del proyecto como el atributo <code>war</code>. El elemento puede contener elementos <code>&lt;options&gt;</code> y <code>&lt;args&gt;</code> opcionales.</p>
+
+<p>Edita <code>build.xml</code> y añade las siguientes líneas:</p>
+
+<pre class="prettyprint">
+  &lt;target name="update" depends="datanucleusenhance"
+      description="Uploads the application to App Engine."&gt;
+    &lt;appcfg action="update" war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="update_indexes" depends="datanucleusenhance"
+      description="Uploads just the datastore index configuration to App Engine."&gt;
+    &lt;appcfg action="update_indexes" war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="rollback" depends="datanucleusenhance"
+      description="Rolls back an interrupted application update."&gt;
+    &lt;appcfg action="rollback" war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="request_logs"
+      description="Downloads log data from App Engine for the application."&gt;
+    &lt;appcfg action="request_logs" war="war"&gt;
+      &lt;options&gt;
+        &lt;arg value="--num_days=5"/&gt;
+      &lt;/options&gt;
+      &lt;args&gt;
+        &lt;arg value="logs.txt"/&gt;
+      &lt;/args&gt;
+    &lt;/appcfg&gt;
+  &lt;/target&gt;
+</pre>
+
+
+<h2 id="The_Complete_Build_File">El archivo de compilación completo</h2>
+
+<p>En las instrucciones que se muestran a continuación se describe el archivo <code>build.xml</code> completo:</p>
+
+<pre class="prettyprint">
+&lt;project&gt;
+  &lt;property name="sdk.dir" location="../appengine-java-sdk" /&gt;
+
+  &lt;import file="${sdk.dir}/config/user/ant-macros.xml" /&gt;
+
+  &lt;path id="project.classpath"&gt;
+    &lt;pathelement path="war/WEB-INF/classes" /&gt;
+    &lt;fileset dir="war/WEB-INF/lib"&gt;
+      &lt;include name="**/*.jar" /&gt;
+    &lt;/fileset&gt;
+    &lt;fileset dir="${sdk.dir}/lib"&gt;
+      &lt;include name="shared/**/*.jar" /&gt;
+    &lt;/fileset&gt;
+  &lt;/path&gt;
+
+  &lt;target name="copyjars"
+      description="Copies the App Engine JARs to the WAR."&gt;
+    &lt;copy
+        todir="war/WEB-INF/lib"
+        flatten="true"&gt;
+      &lt;fileset dir="${sdk.dir}/lib/user"&gt;
+        &lt;include name="**/*.jar" /&gt;
+      &lt;/fileset&gt;
+    &lt;/copy&gt;
+  &lt;/target&gt;
+
+  &lt;target name="compile" depends="copyjars"
+      description="Compiles Java source and copies other source files to the WAR."&gt;
+    &lt;mkdir dir="war/WEB-INF/classes" /&gt;
+    &lt;copy todir="war/WEB-INF/classes"&gt;
+      &lt;fileset dir="src"&gt;
+        &lt;exclude name="**/*.java" /&gt;
+      &lt;/fileset&gt;
+    &lt;/copy&gt;
+    &lt;javac
+        srcdir="src"
+        destdir="war/WEB-INF/classes"
+        classpathref="project.classpath"
+        debug="on" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="datanucleusenhance" depends="compile"
+      description="Performs JDO enhancement on compiled data classes."&gt;
+    &lt;enhance_war war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="runserver" depends="datanucleusenhance"
+      description="Starts the development server."&gt;
+    &lt;dev_appserver war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="update" depends="datanucleusenhance"
+      description="Uploads the application to App Engine."&gt;
+    &lt;appcfg action="update" war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="update_indexes" depends="datanucleusenhance"
+      description="Uploads just the datastore index configuration to App Engine."&gt;
+    &lt;appcfg action="update_indexes" war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="rollback" depends="datanucleusenhance"
+      description="Rolls back an interrupted application update."&gt;
+    &lt;appcfg action="rollback" war="war" /&gt;
+  &lt;/target&gt;
+
+  &lt;target name="request_logs"
+      description="Downloads log data from App Engine for the application."&gt;
+    &lt;appcfg action="request_logs" war="war"&gt;
+      &lt;options&gt;
+        &lt;arg value="--num_days=5"/&gt;
+      &lt;/options&gt;
+      &lt;args&gt;
+        &lt;arg value="logs.txt"/&gt;
+      &lt;/args&gt;
+    &lt;/appcfg&gt;
+  &lt;/target&gt;
+
+&lt;/project&gt;
+</pre>
+
+
+  
+  </div>
+
+        </div>
+        
+<div id="gc-content-footer">
+
+
+
+<div itemprop="datePublished" content="2012-03-26T16:25:25.929448" id="gc-content-last-updated">Last updated marzo 26, 2012.</div>
+
+</div>
+
+
+
+
+      </div>
+
+      </div>
+      
+
+      
+      
+      <footer id="gc-footer">
+        <div id="gc-copyright">
+          <a href="/">
+            <img id="developers-logo-footer" src="/_static/images/developers-logo-footer.png" alt="Google Developers logo" style="vertical-align: center; float: left"/>
+          </a>
+          <ul>
+            <li><a href="http://www.google.com/">Google</a></li>
+            <li><a href="/readme/terms">Condiciones de servicio</a></li>
+            <li><a href="http://www.google.com/intl/en/privacy/">Política de privacidad</a></li>
+            <li><a href="/jobs">Empleo</a></li>
+            <li><a class="google-feedback" data-p="81425" data-b="Documentation"  data-v="devsite-20121105-rc02.362963591990383706" href="">Informar sobre un error</a></li>
+          </ul>
+        </div>
+        
+        <div id="gc-language">
+          <ul>
+            <li>
+              <form id="setlang" action="/i18n/setlang/" method="post">
+                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='0454ec6ccd9625ca2938b15e811d37c3' /></div>
+                <select id="footer_language" name="language">
+                  
+                  
+                  <option
+                     value="ar"
+                     >
+                    العربيّة
+                  </option>
+                  
+                  <option
+                     value="bg"
+                     >
+                    български
+                  </option>
+                  
+                  <option
+                     value="ca"
+                     >
+                    català
+                  </option>
+                  
+                  <option
+                     value="zh-cn"
+                     >
+                    简体中文
+                  </option>
+                  
+                  <option
+                     value="zh-tw"
+                     >
+                    繁體中文
+                  </option>
+                  
+                  <option
+                     value="hr"
+                     >
+                    Hrvatski
+                  </option>
+                  
+                  <option
+                     value="cs"
+                     >
+                    česky
+                  </option>
+                  
+                  <option
+                     value="da"
+                     >
+                    Dansk
+                  </option>
+                  
+                  <option
+                     value="nl"
+                     >
+                    Nederlands
+                  </option>
+                  
+                  <option
+                     value="en"
+                     >
+                    English
+                  </option>
+                  
+                  <option
+                     value="fa"
+                     >
+                    فارسی
+                  </option>
+                  
+                  <option
+                     value="fi"
+                     >
+                    suomi
+                  </option>
+                  
+                  <option
+                     value="fr"
+                     >
+                    Français
+                  </option>
+                  
+                  <option
+                     value="de"
+                     >
+                    Deutsch
+                  </option>
+                  
+                  <option
+                     value="el"
+                     >
+                    Ελληνικά
+                  </option>
+                  
+                  <option
+                     value="he"
+                     >
+                    עברית
+                  </option>
+                  
+                  <option
+                     value="hi"
+                     >
+                    Hindi
+                  </option>
+                  
+                  <option
+                     value="hu"
+                     >
+                    Magyar
+                  </option>
+                  
+                  <option
+                     value="id"
+                     >
+                    Bahasa Indonesia
+                  </option>
+                  
+                  <option
+                     value="it"
+                     >
+                    italiano
+                  </option>
+                  
+                  <option
+                     value="ja"
+                     >
+                    日本語
+                  </option>
+                  
+                  <option
+                     value="ko"
+                     >
+                    한국어
+                  </option>
+                  
+                  <option
+                     value="lv"
+                     >
+                    latviešu
+                  </option>
+                  
+                  <option
+                     value="lt"
+                     >
+                    Lithuanian
+                  </option>
+                  
+                  <option
+                     value="nb"
+                     >
+                    Norsk (bokmål)
+                  </option>
+                  
+                  <option
+                     value="nn"
+                     >
+                    Norsk (nynorsk)
+                  </option>
+                  
+                  <option
+                     value="pl"
+                     >
+                    polski
+                  </option>
+                  
+                  <option
+                     value="pt-br"
+                     >
+                    Português Brasileiro
+                  </option>
+                  
+                  <option
+                     value="pt"
+                     >
+                    Português
+                  </option>
+                  
+                  <option
+                     value="ro"
+                     >
+                    Română
+                  </option>
+                  
+                  <option
+                     value="ru"
+                     >
+                    Русский
+                  </option>
+                  
+                  <option
+                     value="sr"
+                     >
+                    српски
+                  </option>
+                  
+                  <option
+                     value="sk"
+                     >
+                    slovenský
+                  </option>
+                  
+                  <option
+                     value="sl"
+                     >
+                    Slovenščina
+                  </option>
+                  
+                  <option
+                     value="es"
+                      selected="selected" >
+                    español
+                  </option>
+                  
+                  <option
+                     value="sv"
+                     >
+                    Svenska
+                  </option>
+                  
+                  <option
+                     value="th"
+                     >
+                    Thai
+                  </option>
+                  
+                  <option
+                     value="tr"
+                     >
+                    Türkçe
+                  </option>
+                  
+                  <option
+                     value="uk"
+                     >
+                    Українська
+                  </option>
+                  
+                  <option
+                     value="vi"
+                     >
+                    Vietnamese
+                  </option>
+                  
+                </select>
+              </form>
+            </li>
+          </ul>
+        </div>
+        
+      </footer>
+      
+      
+    </div>
+    <div id="needAuth" class="msgDialogContent">
+      
+      <h1>Autenticación obligatoria</h1>
+      
+      <div>
+        Tienes que acceder a <a href='http://www.google.com/+'>Google+</a> para realizar esta acción.
+      </div>
+      <button>Acceder</button>
+      <button>Cancelar</button>
+    </div>
+    <div id="signingIn" class="msgDialogContent">
+      
+      <h1>Acceder a...</h1>
+      <div>
+        
+        Desarrolladores de Google necesita tu permiso para realizar esta acción.
+      </div>
+      
+      <button>Volver a intentarlo</button>
+      
+      <button>Cancelar</button>
+    </div>
+    <script src="/_static/js/script_foot.js"></script>
+    <script>
+      (function($) {
+        devsite.devsite.Init($, null, '');
+      })(jQuery);
+
+      
+      devsite.localInit = function() {
+        
+      };
+      
+    </script>
+    <!-- Google Code for PXL - Developers - Codesite - HP - 90d Remarketing List -->
+    <script type="text/javascript">
+    $('#setlang select').each(function() {
+      if ($.browser.msie) {
+        $(this).change(function() {
+          $('#setlang').submit();
+        });
+      } else {
+        $(this).kdSelect({'change': function() {
+          $('#setlang').submit();
+        }});
+      }
+    });
+    </script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 992540712;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ffffff";
+      var google_conversion_label = "qio2CKCPwQMQqPCj2QM";
+      var google_conversion_value = 0;
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/992540712/?label=qio2CKCPwQMQqPCj2QM&amp;guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
+    
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    // Render any carousels on the page
+    $('.carousel').carousel();
+    // Render any feed widgets on the page
+    
+    $('.feed').rss();
+    $('.feed-plain').rss();
+    // Render any OSS widgets on the page.
+    $('.oss').oss();
+    });
+</script>
+
+<script type="text/javascript" defer>
+
+
+$(document).ready(function() {
+    contentTimer.name = 'content';
+    contentTimer.tick('ol');
+    window.jstiming.report(contentTimer);
+
+    // Boilerplate javascript to enable the plusone button
+    var po = document.createElement('script'); po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js?onload=devsite_plusoneLoaded';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+});
+</script>
+
+
+
+
+  </body>
+</html>

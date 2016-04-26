@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="prueba2" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="af667321-faa9-473b-b1e5-bfd8a56472d0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select (select estado from fide_estado where clave_estado=fide_beneficiario.clave_estado) as estado,(select municipio from fide_municipio where fide_beneficiario.clave_municipio=clave_municipio) as municipio, poblacion, SUM(CASE WHEN clave_tipo_padron=1 THEN 1 ELSE 0 END) AS padron_normal, SUM(CASE WHEN clave_tipo_padron=2 THEN 1 ELSE 0 END) AS paqdron_ext, count(fide_beneficiario.clave_beneficiario) as total from fide_beneficiario group by poblacion, clave_estado, clave_municipio order by estado ASC]]>
+	</queryString>
+	<field name="estado" class="java.lang.String"/>
+	<field name="municipio" class="java.lang.String"/>
+	<field name="poblacion" class="java.lang.String"/>
+	<field name="padron_normal" class="java.lang.Integer"/>
+	<field name="paqdron_ext" class="java.lang.Integer"/>
+	<field name="total" class="java.lang.Integer"/>
+	<variable name="variable1" class="java.lang.String" incrementType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{estado}]]></variableExpression>
+	</variable>
+	<variable name="estado_1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{estado}]]></variableExpression>
+	</variable>
+	<variable name="total_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{total}]]></variableExpression>
+	</variable>
+	<variable name="estado_2" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{estado}]]></variableExpression>
+	</variable>
+	<variable name="municipio_1" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{municipio}]]></variableExpression>
+	</variable>
+	<variable name="poblacion_1" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{poblacion}]]></variableExpression>
+	</variable>
+	<variable name="padron_normal_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{padron_normal}]]></variableExpression>
+	</variable>
+	<variable name="paqdron_ext_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{paqdron_ext}]]></variableExpression>
+	</variable>
+	<variable name="total_2" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{total}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="272" y="0" width="250" height="29" uuid="7a878b84-7979-4767-851b-6436b9298f3c"/>
+				<textElement textAlignment="Center">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[Padrón de Beneficiarios]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="250" height="65" uuid="080aa366-3597-4165-8774-dc14c8c21cc9"/>
+				<imageExpression><![CDATA["C:\\Users\\luis.pelaez\\Documents\\NetBeansProjects\\slfca\\web\\img\\fide_banner.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="75" y="7" width="81" height="35" uuid="2137d411-81dc-462c-9c59-9fab86bb4872"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="7" width="109" height="35" uuid="554eab79-13c3-42c9-9525-fcdfcf38a119"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Municipio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="7" width="83" height="35" uuid="023a542f-17ef-458e-9b70-a639fefd34c4"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Población]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="0" width="152" height="47" uuid="1d3592d7-ac16-46d0-bae8-c2e716010001"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Beneficiarios padrón elegible]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="555" y="0" width="141" height="47" uuid="17e90071-b20a-4031-942c-7698669f44a0"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Beneficiarios padrón ampliado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="696" y="0" width="100" height="48" uuid="9e153a7b-8f99-4aa5-8e1c-25209abd8d01"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Beneficiarios]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="6" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="72" y="2" width="100" height="20" uuid="41f1a7de-e63a-4056-bc83-48adf7ec730b"/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="2" width="100" height="20" uuid="b5c4e82d-6df8-471c-af1c-178f1f524657"/>
+				<textFieldExpression><![CDATA[$F{municipio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="304" y="2" width="100" height="20" uuid="69d0a689-1a58-4f2f-8fb9-3f1e1ec33c04"/>
+				<textFieldExpression><![CDATA[$F{poblacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="2" width="100" height="20" uuid="f438825f-1d35-42f2-bdc7-e8738e7b8c39"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{padron_normal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="555" y="2" width="100" height="20" uuid="85d9b495-0648-4bf7-b760-7c1c50ed4106"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{paqdron_ext}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="4" width="100" height="20" uuid="f334d8c9-efbc-44cf-bd26-656440d5bd4f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="73" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="1682dfa6-2c30-493b-b885-51079ea7ac35"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="95830b10-89f5-4ac2-a516-9215330a46f3"/>
+				<textElement>
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="0" width="100" height="20" uuid="b08018be-d8df-4941-b3d8-f997f0fb0085"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{estado_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="0" width="100" height="20" uuid="a09dcfea-db69-4bd5-9d47-273b69bba01f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{municipio_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="0" width="100" height="20" uuid="c4a3205f-d947-4778-88b2-ff52fca89d9b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{poblacion_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="0" width="129" height="20" uuid="813a16db-5722-4f83-b32e-951511f5bc48"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{padron_normal_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="555" y="0" width="100" height="20" uuid="841b615d-cf7f-447a-8ce4-a7e2ae41f284"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{paqdron_ext_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="b029d0d1-af25-4885-9773-ee33b139c1b4"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{total_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

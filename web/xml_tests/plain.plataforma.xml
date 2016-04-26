@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qry>
+    <sql><![CDATA[SELECT clave_rol,rol FROM rol ]]></sql>
+<permisos>
+    <permiso><clave_permiso>1</clave_permiso></permiso>
+    <permiso><clave_permiso>2</clave_permiso></permiso>
+    <permiso><clave_permiso>3</clave_permiso></permiso>
+    <permiso><clave_permiso>4</clave_permiso></permiso>
+    <permiso><clave_permiso>5</clave_permiso></permiso>
+</permisos>
+<configuracion_forma>
+	<alias_tab><![CDATA[el rol]]></alias_tab>
+	<evento tipo=""><![CDATA[null]]></evento>
+	<instrucciones><![CDATA[null]]></instrucciones>
+	<forma><![CDATA[Rol]]></forma>
+	<prefiltro><![CDATA[false]]></prefiltro>
+</configuracion_forma>
+<registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[1]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Líder de proyecto]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[2]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Promotor-Coordinador]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[3]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Administrador de Sistema]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[4]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Administrador de Proyectos]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[5]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Operativo]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[6]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Director de Area]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[7]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Enlace Técnico Administrativo]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[8]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Director General]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[9]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Control Presupuestal]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[10]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Jurídico]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[11]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Recursos Humanos]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[12]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Coordinador de Promotores]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[13]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Comité de Evaluación de Proyectos]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[14]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Derechos de Autor]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[15]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Apoyo Promotor]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[16]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Apoyo Líder]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[17]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Apoyo Enlace]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[18]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Responsable Equipo]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[19]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Apoyo Coordinador de Promotores]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[20]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Cliente]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[21]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Director Coordinación]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[22]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Recursos Financieros]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[23]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Operador de Control Presupuestal]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[24]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Coordinador de Administración y Finanzas]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[25]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Director General]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[26]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Director de Administración de Proyectos]]>
+         </rol>
+             </registro>
+        <registro>
+           <clave_rol autoincrement="TRUE" tipo_dato="int"><![CDATA[27]]>
+         </clave_rol>
+             <roltipo_dato="varchar"><![CDATA[Director de Control Presupestal]]>
+         </rol>
+             </registro>
+        </qry>

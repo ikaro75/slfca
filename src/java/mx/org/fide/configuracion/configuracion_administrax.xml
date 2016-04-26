@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    <empresa>
+        <razon_social><![CDATA[eoTechno local]]></razon_social>
+        <logo>img/TECH LOGO.png</logo>
+        <db>
+            <servidor>localhost:3306</servidor>
+            <nombre>eotechne</nombre>
+            <usuario>root</usuario>
+            <password>ikaro75</password>
+            <tipo>MYSQL</tipo>
+        </db>
+        <email>
+            <usuario_smtp></usuario_smtp>
+            <iniciotls_habilitado></iniciotls_habilitado>
+            <servidor_smtp></servidor_smtp>
+            <usuario_smtp></usuario_smtp>
+            <password_smtp>/</password_smtp>
+        </email>
+    </empresa>
+    <empresa>
+        <razon_social><![CDATA[eoTechno @jadministrax]]></razon_social>
+        <logo>img/TECH LOGO.png</logo>
+        <db>
+            <servidor>localhost:3306</servidor>
+            <nombre>jadminis_eotechne</nombre>
+            <usuario>jadminis_root</usuario>
+            <password>malditasea3</password>
+            <tipo>MYSQL</tipo>
+        </db>
+        <email>
+            <usuario_smtp></usuario_smtp>
+            <iniciotls_habilitado></iniciotls_habilitado>
+            <servidor_smtp></servidor_smtp>
+            <usuario_smtp></usuario_smtp>
+            <password_smtp>/</password_smtp>
+        </email>
+    </empresa>       
+    <empresa>
+        <razon_social>Gradesa</razon_social>
+        <logo>img/administrax_logo.png</logo>
+        <db>
+            <servidor>localhost:3306</servidor>
+            <nombre>gradesa</nombre>
+            <usuario>root</usuario>
+            <password>ikaro75</password>
+            <tipo>MYSQL</tipo>
+        </db>
+        <email>
+            <usuario_smtp></usuario_smtp>
+            <iniciotls_habilitado></iniciotls_habilitado>
+            <servidor_smtp></servidor_smtp>
+            <usuario_smtp></usuario_smtp>
+            <password_smtp>/</password_smtp>
+        </email>
+    </empresa>        
+</configuracion>

@@ -1,0 +1,45 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>AdministraX Mobile</title>
+        <link rel="stylesheet"  href="jquery.mobile-1.3.2.min.css">
+        <link rel="stylesheet"  href="administrax.css">
+        <link rel="shortcut icon" href="demos/_assets/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <script src="../jQuery/js/jquery-1.7.2.min.js"></script>
+        <script src="js/login.js"></script> 
+        <script src="jquery.mobile-1.3.2.min.js"></script>        
+    </head>
+<body> 
+<div data-role="page" id="login" data-theme="b">
+
+  <div data-role="header" data-theme="c" >
+    <div class="logo"><h1>&nbsp;</h1></div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form method="post" action="../control?$cmd=login&$app=mobile">
+        <label for="email">Usuario</label>
+        <input type="text" name="email" id="email">
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+        <label for="$config">Empresa</label>
+        <select id="$config" name="$config" >
+        </select>    
+      
+        <input type="button"  data-icon="lock" id="submitButton" value="Iniciar sesión" />
+    </form>
+  </div>
+
+  <div data-role="footer" id="footer">
+  </div>
+
+</div>
+
+</body>
+</html>

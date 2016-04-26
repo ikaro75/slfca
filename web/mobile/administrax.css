@@ -1,0 +1,23 @@
+/* 
+    Document   : administrax
+    Created on : 7/04/2014, 11:06:34 PM
+    Author     : Personal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.logo {
+display: block;
+width: 200px;
+height: 50px;
+background-image: url(img/administrax_logo_mobile.gif);
+background-repeat: no-repeat;
+background-size: contain;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5px;
+}

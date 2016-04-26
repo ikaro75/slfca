@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    
+    <empresa>
+        <razon_social><![CDATA[Infinite CLincial Research]]></razon_social>
+        <logo>img/icr_logo_5.png</logo>
+        <db>
+            <servidor>localhost:3306</servidor>
+            <nombre>icr</nombre>
+            <usuario>root</usuario>
+            <password>ikaro75</password>
+            <tipo>MYSQL</tipo>
+        </db>
+        <email>
+            <usuario_smtp></usuario_smtp>
+            <iniciotls_habilitado></iniciotls_habilitado>
+            <servidor_smtp></servidor_smtp>
+            <usuario_smtp></usuario_smtp>
+            <password_smtp>/</password_smtp>
+        </email>
+    </empresa>              
+</configuracion>

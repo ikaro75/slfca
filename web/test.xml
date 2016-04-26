@@ -1,0 +1,21 @@
+<div id='dlgModal_1_8_588' title=''>
+    <div id='formTab_1_8_588' security='' datestamp='20120126115251' app='1' forma='8' pk='588' modo='update' originatingObject='' updateControl='' updateForeignForm='' >
+    <ul>
+        <li><a href='#divFormGeneral_1_8_588'>General</a></li>
+    </ul>
+    <div id='divFormGeneral_1_8_588' >
+        <div align='center'>
+            <br /><br />Cargando informaci&oacute;n... <br /> <br />
+            <img src='img/loading.gif' />
+        </div>
+    </div>
+    <div align='right' style='clear:left'>
+        <table style='width:100%'>
+            <tr>
+                <td align='left' id='tdEstatus_1_8_588' class='estatus_bar'>&nbsp;</td>
+                <td align='right'><input type='button' class='formButton' id='btnGuardar_1_8_588' value='Guardar' /></td>
+            </tr    >
+        </table>
+    </div>
+    </div>
+</div>

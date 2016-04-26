@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<survey>
+    <configuracion_survey>
+        <estudio>Registro de cliente</estudio>
+        <cuestionario>Registro de cliente</cuestionario>
+        <evento>null</evento>
+        <seccion_actual>2</seccion_actual>
+        <primera_seccion>2</primera_seccion>
+        <ultima_seccion>15</ultima_seccion>
+        <estatus>2</estatus>
+    </configuracion_survey>      
+
+    <siguiente_accion><![CDATA[continua]]></siguiente_accion>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Calle',fecha='2013/11/23 17:24:22',clave_empleado=1 WHERE claveRespuestaParticipante=1614]]></update>
+    <pk>1614</pk>
+    <bitacora>6986</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='No exterior',fecha='2013/11/23 17:24:22',clave_empleado=1 WHERE claveRespuestaParticipante=1615]]></update>
+    <pk>1615</pk>
+    <bitacora>6987</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Entre que calles',fecha='2013/11/23 17:24:22',clave_empleado=1 WHERE claveRespuestaParticipante=1617]]></update>
+    <pk>1617</pk>
+    <bitacora>6988</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Colonia',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1618]]></update>
+    <pk>1618</pk>
+    <bitacora>6989</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Ciudad',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1619]]></update>
+    <pk>1619</pk>
+    <bitacora>6990</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Delegacion',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1620]]></update>
+    <pk>1620</pk>
+    <bitacora>6991</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='09010',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1621]]></update>
+    <pk>1621</pk>
+    <bitacora>6992</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Entidad',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1622]]></update>
+    <pk>1622</pk>
+    <bitacora>6993</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Pais',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1623]]></update>
+    <pk>1623</pk>
+    <bitacora>6994</bitacora>
+    <update><![CDATA[UPDATE vazherco_respuesta_participante SET respuesta='Tel',fecha='2013/11/23 17:24:23',clave_empleado=1 WHERE claveRespuestaParticipante=1624]]></update>
+    <pk>1624</pk>
+    <bitacora>6995</bitacora>
+        
+    ]]></html>
+</survey>

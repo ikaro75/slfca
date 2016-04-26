@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<item id="2" parent_id="0" rel="aplicacion">
+		<content><name><![CDATA[Aplicaci&oacute;n]></name></content>
+	</item>
+        <item id="1" parent_id="2" rel="configuracion">
+                <content><name><![CDATA[Configuraci&oacute;n]]></name></content>
+        </item>
+        <item id="3" parent_id="2" rel="forma">
+                <content><name><![CDATA[Forma]]></name></content>
+        </item>
+        <item id="5" parent_id="2" rel="perfil">
+                <content><name><![CDATA[Perfiles de seguridad]]></name></content>
+        </item>
+        <item id="6" parent_id="2" rel="empleado">
+                <content><name><![CDATA[Usuarios]]></name></content>
+        </item>
+
+</root>

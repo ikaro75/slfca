@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qry>
+
+    <sql><![CDATA[select * from vazherco_participante where claveParticipante=0 ]]></sql>
+    <clave_consulta>4160</clave_consulta>
+    <result>
+        <insert_participante>
+            <insert><![CDATA[INSERT INTO vazherco_participante (nombre,apellidopaterno,apellidomaterno,email,claveempleado,claveestatus,clavetipoparticipante,fecha)VALUES('Daniel','Martínez',null,'ikaro75@gmail.com',1,1,1,CURDATE())]]></insert>
+            <pk>22</pk>
+        </insert_participante>
+        <insert_estudioParticipante>
+            <insert><![CDATA[INSERT INTO vazherco_estudio_participante (claveestudio,claveparticipante,clavecuestionarioactual,fecha,claveestatus)VALUES(1,22,1,'2013/11/22 11:15:05',1)]]></insert>
+            <pk>22</pk>
+        </insert_estudioParticipante>
+        <insert_cuestionarioParticipante>
+            <insert><![CDATA[INSERT INTO vazherco_cuestionario_participante (claveestudioparticipante,claveparticipante,clavecuestionario,fechainicio,siguientepregunta,claveestatus)VALUES(22,22,1,'2013/11/22 11:15:05',2,1)]]></insert>
+            <pk>22</pk>
+        </insert_cuestionarioParticipante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,2,'2013/11/22 11:15:05',1)]]></insert>
+        <pk>1489</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,3,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1490</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,4,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1491</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,5,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1492</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,6,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1493</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,7,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1494</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,8,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1495</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,9,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1496</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,10,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1497</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,11,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1498</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,12,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1499</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,13,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1500</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,14,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1501</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,15,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1502</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,16,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1503</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,17,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1504</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,18,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1505</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,19,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1506</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,20,'2013/11/22 11:15:06',1)]]></insert>
+        <pk>1507</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,21,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1508</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,22,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1509</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,23,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1510</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,24,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1511</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,25,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1512</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,26,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1513</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,27,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1514</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,28,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1515</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,29,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1516</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,30,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1517</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,31,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1518</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,32,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1519</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,33,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1520</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,34,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1521</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,13,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1522</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,14,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1523</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,15,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1524</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,16,'2013/11/22 11:15:07',1)]]></insert>
+        <pk>1525</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,17,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1526</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,18,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1527</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,19,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1528</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,20,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1529</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,21,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1530</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,35,22,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1531</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,36,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1532</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,37,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1533</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,38,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1534</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,39,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1535</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,40,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1536</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,41,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1537</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,42,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1538</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,43,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1539</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,44,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1540</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,45,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1541</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,46,'2013/11/22 11:15:08',1)]]></insert>
+        <pk>1542</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,47,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1543</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,48,25,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1544</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,48,26,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1545</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,48,27,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1546</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,claverespuesta,fecha,clave_empleado)VALUES(22,48,28,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1547</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,49,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1548</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,50,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1549</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,51,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1550</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,53,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1551</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,52,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1552</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,54,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1553</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,55,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1554</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,56,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1555</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,57,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1556</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,58,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1557</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,59,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1558</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,60,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1559</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,61,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1560</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,62,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1561</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,63,'2013/11/22 11:15:09',1)]]></insert>
+        <pk>1562</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,64,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1563</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,65,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1564</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,66,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1565</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,67,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1566</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,68,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1567</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,69,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1568</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,70,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1569</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,71,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1570</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,72,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1571</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,73,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1572</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,74,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1573</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,75,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1574</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,76,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1575</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,77,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1576</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,78,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1577</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,79,'2013/11/22 11:15:10',1)]]></insert>
+        <pk>1578</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,80,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1579</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,81,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1580</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,82,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1581</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,83,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1582</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,84,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1583</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,85,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1584</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,86,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1585</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,87,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1586</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,88,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1587</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,89,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1588</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,90,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1589</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,91,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1590</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,92,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1591</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,93,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1592</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,94,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1593</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,95,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1594</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,96,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1595</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,97,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1596</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,98,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1597</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,99,'2013/11/22 11:15:11',1)]]></insert>
+        <pk>1598</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,100,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1599</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,101,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1600</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,102,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1601</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,103,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1602</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,104,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1603</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,105,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1604</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,106,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1605</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,107,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1606</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,108,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1607</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,109,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1608</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,110,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1609</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,111,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1610</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,112,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1611</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,113,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1612</pk>]]></insert_respuesta_participante>
+        <insert_respuesta_participante><![CDATA[<insert><![CDATA[INSERT INTO vazherco_respuesta_participante (clavecuestionarioparticipante,clavepregunta,fecha,clave_empleado)VALUES(22,114,'2013/11/22 11:15:12',1)]]></insert>
+        <pk>1613</pk>]]></insert_respuesta_participante>
+        <update_cuestionarioParticipante><![CDATA[<update><![CDATA[UPDATE vazherco_cuestionario_participante SET claveestudioparticipante=22,claveparticipante=22,clavecuestionario=1,fechainicio='2013/11/22 11:15:05',siguientepregunta=2,claveestatus=2 WHERE claveCuestionarioParticipante=22]]></update>
+        <pk>22</pk>
+        <bitacora>6783</bitacora>]]></update_cuestionarioParticipante>
+    </result>
+</qry>

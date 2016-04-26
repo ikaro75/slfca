@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>AdministraX móvil</title>
+        <meta name="description" content="AdministraX móvil">
+
+        <!-- Mobile Tags -->
+        <meta content="initial-scale=1.0, user-scalable=no" name="viewport">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">	
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- You can put your own logo below linking photos for splash screen-->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="assets/images/touch/apple-touch-icon.png">
+        <!-- / Mobile Tags -->
+
+        <!-- Splash screens -->
+        <!-- iPhone 320x460 -->
+        <link href="assets/images/splashscreens/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+        <!-- iPhone (Retina) 640x920 -->
+        <link href="assets/images/splashscreens/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        <!-- iPhone 5 640x1096-->
+        <link href="assets/images/splashscreens/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        <!-- iPad 768x1004 / 748x1024-->
+        <link href="assets/images/splashscreens/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+        <link href="assets/images/splashscreens/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+        <!-- iPad (Retina) 1536x2008 / 1496x2048 -->
+        <link href="assets/images/splashscreens/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        <link href="assets/images/splashscreens/apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        <!-- / Splash Screens -->
+
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="assets/css/jquery.mobile.structure-1.0.1.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/jquery.mobile.1.0.1.min.css" />
+        <link rel="stylesheet" href="assets/css/add2home.css"><!-- Iphone Bubble  -->
+        <link rel="stylesheet" href="assets/css/icons/icons.css" type="text/css" >
+        <link rel="stylesheet" href="assets/css/icons/nav-icons.css" type="text/css" >
+        <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" > <!-- Theme Style Sheet File -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/photoswipe.css">
+        <link rel="stylesheet" href="assets/css/menuboton.css">
+        <link rel="stylesheet" href="assets/css/lv.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/icons/nav-icons-black.css"> 
+        <!-- / CSS Files -->
+
+        <!-- Javascripts is down of the page for fast open -->
+        <script src="assets/js/vendor/modernizr-2.6.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css"></script> 
+        <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script> -->
+        <!-- <script type="text/javascript" src="mobile/jquery.mobile-1.3.2.min.js" ></script> -->         
+        <script src="assets/js/vendor/zepto.min.js"></script>
+        <script src="assets/js/helper.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/add2home.js" charset="utf-8"></script><!-- Iphone Bubble  -->
+        <script src="js/intranet.js"></script>
+        <script src="js/jquery.form_mobile.js"></script>
+        <script src="js/jquery.form_mobile_queue.js"></script>
+        <script src="js/jquery.field_toolbar_mobile.js"></script>
+        <script src="js/jquery.comments_mobile.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/funciones.js"></script>
+        <script src="js/jquery.timeago.js"></script>
+        <script src="js/jquery.pi.reportParameter_mobile.js"></script>
+        <script src="js/jquery.tooltip.js"></script>
+        <script src="js/documento.js"></script>
+        
+
+        <!--  Photo Swipe Gallery Custom JS End-->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+        
+        <!--  Agenda Custom JS  -->
+        <script type="text/javascript" src="js/alertmanager.js"></script>
+        <script type="text/javascript" src="js/fullcalendar.js"></script>
+        <link rel="stylesheet" media="screen" href="mobile/fullcalendar.css" />
+        <!--  Agenda Custom JS End  -->
+    </head>
+    <body id="intranet">        
+        <!-- Menu Begin -->
+        <div id="menu">
+            <ul>
+                <li>
+                    <img style="width: 50px; height: 50px; margin: 5px;" id="userAvatar" src="">
+                    <h3 style="margin-left: 58px; margin-top: -60px; color: #fff" id="userName"></h3>
+                    <a style="height: 6px; margin-left: 60px;" href="#" id="lnkCerrarSesion"><img style="width: 15px; height: 15px;" alt="" src="assets/images/icons/white/Subscription.png"><h5 style="margin-top: -25px; margin-left: 20px;">Cerrar sesi&oacute;n</h5></a>
+                </li>
+                <li><a href="#home" class="contentLink" data-transition="fade">Inicio<span class="icon"></span></a></li>
+                <li><a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=380&$ta=select&page=1&rows=10&sidx=&sord=&$w=&$om=dialog')" href="#" class="contentLink" data-transition="pop">Noticias<span class="icon"></span></a></li>
+                <li><a onclick="carga_pagina('intranet.html#agenda');" href="#" class="contentLink" data-transition="flip">Agenda<span class="icon"></span></a></li>
+                <li><a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=371&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#" class="contentLink" data-transition="fade">Contactos<span class="icon"></span></a></li>
+                <li><a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=374&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#" class="contentLink" data-transition="fade">Grupos de contactos<span class="icon"></span></a></li>
+                <li><a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=378&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#" class="contentLink" data-transition="flip">Documentos<span class="icon"></span></a></li>
+                <li><a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=364&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#" class="contentLink" data-transition="slideup">Promoción<span class="icon"></span></a></li>
+                <li><a href="#reportes" class="contentLink" data-transition="slideup">Reportes de Promoción<span class="icon"></span></a></li>
+                <li><a href="#kit_promocional" class="contentLink" data-transition="slide">Kit promocional<span class="icon"></span></a></li>
+                <li><a href="#normatividad" class="contentLink" data-transition="slide">Normatividad<span class="icon"></span></a></li>
+                <li><a href="#formatos" class="contentLink" data-transition="slideup">Formatos institucionales<span class="icon"></span></a></li>
+            </ul>
+        </div>
+        <!-- /Menu -->
+        <!-- *********************************************************
+       	 HOME PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="home" data-theme="a" >
+            <!-- Header Begin -->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo"><h1>&nbsp;</h1></div>
+            </div>
+            <!-- /header -->
+
+            <!-- Content Begin -->
+            <div data-role="content">
+
+                <!-- Slider -->     
+                <div class="flex-container">
+                    <div class="flexslider" id="div_home_slider">
+                        <ul class="slides" id="ul_home_slider"> 
+                        </ul>
+                    </div>
+                </div>
+                <!-- / Slider -->
+
+                <!-- Botones Menu --> 
+                <div class="my-menu-boton">
+                    <ul data-role="listview" data-inset="true">
+                        <li>
+                            <a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=380&$ta=select&page=1&rows=10&sidx=&sord=&$w=&$om=dialog')" href="#">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_noti.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Noticias</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="carga_pagina('intranet.html#agenda');" href="#">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_agenda.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Agenda</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=371&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_contact.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Contactos</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=374&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_grupo.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Grupos de contactos</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=378&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#" >
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_docs.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Documentos</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="carga_pagina('intranet.html#catalogo?$cmd=plainbypage&$cf=364&$ta=select&page=1&rows=10&sidx=&sord=desc&$w=&$om=form&');" href="#">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_promo.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Promoci&oacute;n</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#reportes">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_reportes.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div style="margin-top: -11px;"  >Reportes de Promoci&oacute;n</div></div>
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="#kit_promocional">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_kit.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Kit promocional</div></div>
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="#normatividad">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_notmativi.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div>Normatividad</div></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#formatos">
+                                <img class="ui-li-thumb" src="assets/images/menu/bt_formatos.png">
+                                <div class="ui-li-desc" style="padding-top: 20px;"><div style="margin-top: -11px;">Formatos institucionales</div></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / Botones Menu --> 
+
+            </div>
+            <!-- /content -->
+        </div>
+        <!-- *********************************************************
+       	 HOME PAGE END
+        ********************************************************* -->
+
+
+
+        <!-- *********************************************************
+       	 CATALOGO PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="catalogo" data-theme="a">
+
+            <!-- Header Begin -->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a id="linkTitulo" href="#"></a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content Begin -->
+            <div data-role="content" class="my-page" id="divListView">
+                <form role="search" style="margin: 0 auto; max-width: 1340px;"><input id="txtBusca" placeholder="Buscar..." type="search" data-theme="d"></form>                      
+                <ul id="lv" data-role="listview" data-inset="true" style="box-shadow:none;" data-theme="a">
+                    
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!-- /content -->
+            <!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+            <div data-role="footer" class="nav-glyphish" data-position="fixed" data-theme="a" id="footer">
+            
+                <div data-role="navbar" class="nav-glyphish" data-grid="c">
+                    <ul>
+                        <li style="width:80%; margin-left: 10%;"><a  href="#" data-icon="plus" id="lnkNuevoRegistro">Nuevo registro</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!-- *********************************************************
+       	  CATALOGO PAGE END
+        ********************************************************* -->
+
+
+        <!-- *********************************************************
+       	 Reportes de promocion PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="reportes" data-theme="a">
+
+            <!-- Header Begin -->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Contactos">Reportes de promoción</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content Begin -->
+            <div data-role="content" id="divReportes" class="my-page">
+                <ul id="lvReportes" data-role="listview" data-inset="true" style="box-shadow:none;">
+                   <li><a id="lnkReporte_4" class="lnkReporte" reporte="4" perfil="1" jsp="ireport" parametros="2" tipo_reporte="2" forma="314" href="#"><img class="ui-li-thumb" src="assets/images/menu/bt_reportes.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Reporte de grupos de interés</p></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!-- /content -->
+
+        </div>
+        <!-- *********************************************************
+       	  Reportes de promocion PAGE END
+        ********************************************************* -->
+
+        <!-- *********************************************************
+        NORMATIVIDAD PAGE BEGIN
+       ********************************************************* -->
+        <div data-role="page" class="page" id="normatividad" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Blog">Normatividad</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->	
+            <div data-role="content" class="my-page"> 
+                <div class="content_mylistview_formatos">
+                    <ul id="mylistview_normatividad" data-role="listview" data-inset="true" data-theme="a">
+                        <li><a href="http://siap.ilce.edu.mx/documentos/REGLAMENTO_INTERIOR_ILCE _18_abril_2011.pdf"><img class="ui-li-thumb" src="img/pdf.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Reglamento Interno</p></a></li>
+                        <li><a href="http://siap.ilce.edu.mx/documentos/Promulgacion_Acuerdo_de_Sede-1982.pdf"><img class="ui-li-thumb" src="img/pdf.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Acuerdo Sede</p></a></li>
+                        <li><a href="http://siap.ilce.edu.mx/documentos/Promulgacion_Convenio_Cooperacion.pdf"><img class="ui-li-thumb" src="img/pdf.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Convenio de Cooperación</p></a></li>
+                    </ul>
+                </div>
+            </div><!-- / Content -->
+
+        </div>
+        <!-- *********************************************************
+       	  NORMATIVIDAD PAGE END
+        ********************************************************* -->
+        
+        <!-- *********************************************************
+        FORMATOS PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="page" id="formatos" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Blog">Formatos Institucionales</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->	
+            <div data-role="content" class="my-page"> 
+                <div class="content_mylistview_formatos">
+                    <ul id="mylistview_formatos" data-role="listview" data-inset="true"  data-theme="a">
+                        <li><a href="http://siap.ilce.edu.mx/intranet-movil/documentos/formato%20basico.docx" rel="external"><img class="ui-li-thumb" src="img/word.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Formato básico</p></a></li>
+                        <li><a href="http://siap.ilce.edu.mx/intranet-movil/documentos/FORMATO%20DE%20ORDEN%20DEL%20DIA.doc" rel="external"><img class="ui-li-thumb" src="img/word.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Formato de orden del día</p></a></li>
+                        <li><a href="http://siap.ilce.edu.mx/intranet-movil/documentos/FORMATO%20PROPUESTAS%20TECNICO-ECONOMICA.doc" rel="external"><img class="ui-li-thumb" src="img/word.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Formato de propuestas técnico-económicas</p></a></li>
+                        <li><a href="http://siap.ilce.edu.mx/intranet-movil/documentos/FORMATO%20PARA%20MINUTAS.doc" rel="external"><img class="ui-li-thumb" src="img/word.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Formato para minutas</p></a></li>
+                    </ul>
+                </div>
+            </div><!-- / Content -->
+
+        </div>
+        <!-- *********************************************************
+       	  FORMATOS PAGE END
+        ********************************************************* -->
+
+        <!-- *********************************************************
+            KIT PROMOCIONAL PAGE BEGIN
+           ********************************************************* -->
+        <div data-role="page" class="page" id="kit_promocional" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Blog">Kit promocional</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->	
+            <div data-role="content" class="my-page"> 
+                <div class="content_mylistview_formatos">
+                    <ul id="mylistview_kit" data-role="listview" data-inset="true"  data-theme="a">
+                        <li><a href="intranet/promocion/Catalogo_ILCE_Radio_y_TV.pdf" rel="external" ><img class="ui-li-thumb" src="img/pdf.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Catálogo ILCE - Radio y TV</p></a></li>
+                        <li><a href="intranet/promocion/ILCE_presentacion(2013).pptx" rel="external"><img class="ui-li-thumb" src="img/pdf.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Presentación ILCE 2013</p></a></li>
+                        <li><a href="video1.html" data-rel="dialog" data-transition="flip"><img class="ui-li-thumb" src="img/mp4.png" ><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Productos  de Radio y TV</p></a></li>
+                        <li><a href="video2.html" data-rel="dialog" data-transition="flip"><img class="ui-li-thumb" src="img/mp4.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Promo de Maestría MDHYSP</p></a></li>
+                        <li><a href="video3.html" data-rel="dialog" data-transition="flip"><img class="ui-li-thumb" src="img/mp4.png"><p class="ui-li-desc" style="font-size: 16px; color: #FFFFFF;">Video institucional</p></a></li>                        
+                    </ul>
+                </div>
+            </div><!-- / Content -->
+
+        </div>
+        <!-- *********************************************************
+            VIDEO1 DIALOG BEGIN
+           ********************************************************* -->
+
+        <!-- *********************************************************
+            VIDEO2 DIALOG  BEGIN
+           ********************************************************* -->
+        
+       <!-- *********************************************************
+            VIDEO3 DIALOG  BEGIN
+           ********************************************************* -->
+        
+        <!-- *********************************************************
+       	  AGENDA PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="agenda" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Agenda">Agenda</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->
+            <div data-role="content" id="contentAgenda">
+                
+            </div>
+            <!-- / Content -->
+            
+            <div data-role="footer" class="nav-glyphish" data-position="fixed" data-theme="a" id="footerAgenda">
+                <div data-role="navbar" class="nav-glyphish" data-grid="c">
+                    <ul>
+                        <li style="width:80%; margin-left: 10%;"><a  href="#" data-icon="plus" id="lnkNuevoRegistroAgenda">Nuevo registro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- *********************************************************
+       	  AGENDA PAGE END
+        ********************************************************* -->
+
+
+        <!-- *********************************************************
+       	  PRODUCT DETAIL PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="product-details" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+                <a href="#products" class="backBtn">Back</a>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#product" title="Products">Products</a></li>
+                <li><a href="#" title="Product Detail">Product Detail</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->
+            <div data-role="content" >
+
+                <!-- Text Box Area -->
+                <div class="text-box-area">
+
+                    <img src="assets/images/Demo/Slide/demo3.jpg" alt="img" class="align-center imgbox fixwidth">
+
+                    <div class="text-info">
+                        <p>
+                            <strong>Amazing Navigation Bar!</strong><br/>
+                            You can see samples of navbars code below. Easy to use and develop. And you will see down of window fixed navigation bar use.</p>
+                    </div>
+
+
+
+                    <!-- Navbars -->
+                    <div class="text-info">
+                        <p>
+                            <strong>Two column navbar</strong><br/>
+                            Two column navbar sample</p>
+                    </div>
+
+                    <div data-role="navbar" class="nav-glyphish" data-grid="a">
+                        <ul>
+                            <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                            <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="text-info">
+                        <p>
+                            <strong>Three column navbar</strong><br/>
+                            Three column navbar sample</p>
+                    </div>
+
+
+                    <div data-role="navbar" class="nav-glyphish" data-grid="b">
+                        <ul>
+                            <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                            <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                            <li><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="text-info">
+                        <p>
+                            <strong>Four column navbar</strong><br/>
+                            Four column navbar sample</p>
+                    </div>
+
+                    <div data-role="navbar" class="nav-glyphish" data-grid="c">
+                        <ul>
+                            <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                            <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                            <li><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></li>
+                            <li><a href="https://maps.google.com/" class="iconsub-white-Map" data-icon="custom">Map</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="text-info">
+                        <p>
+                            <strong>Five column navbar</strong><br/>
+                            Five column navbar sample</p>
+                    </div>
+
+                    <div data-role="navbar" class="nav-glyphish" data-grid="d">
+                        <ul>
+                            <li><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></li>
+                            <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                            <li><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></li>
+                            <li><a href="#" class="iconsub-white-House" data-icon="custom">Home</a></li>
+                            <li><a href="#" class="iconsub-white-Eye" data-icon="custom">About</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Navbars -->
+
+                </div>
+                <!-- / Text Box Area -->
+
+
+            </div>
+            <!-- / Content -->
+            <div class="clear"></div>
+
+            <!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+            <div data-role="footer" class="nav-glyphish" data-position="fixed" data-theme="a">
+
+                <div data-role="navbar" class="nav-glyphish" data-grid="c">
+                    <ul>
+                        <li><a href="#blog" class="iconsub-white-Idcard" data-icon="custom">Blog</a></li>
+                        <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                        <li><a href="tel:+900000000" class="iconsub-white-Phone" data-icon="custom">Phone</a></li>
+                        <li><a href="#home" class="iconsub-white-House" data-icon="custom">Home</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- end -->
+        </div>
+        <!-- *********************************************************
+       	  PRODUCT DETAIL PAGE END
+        ********************************************************* -->
+
+
+        <!-- *********************************************************
+        GALLERY PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="gallery" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Gallery">Gallery</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->
+            <div data-role="content">		
+
+                <!-- Three Column Gallery -->         
+                <ul id="Gallery" class="gallery">
+                    <li class="gallery-three"><a href="assets/images/Demo/Galleries/gallery-images/img1.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img1.jpg" alt="Caption"></a></li>
+                    <li class="gallery-three"><a href="assets/images/Demo/Galleries/gallery-images/img2.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img2.jpg" alt="Caption"></a></li>
+                    <li class="gallery-three"><a href="assets/images/Demo/Galleries/gallery-images/img3.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img3.jpg" alt="Caption"></a></li>
+                </ul>
+                <!-- /Three Column Gallery -->  
+
+                <!-- Two Column Gallery -->         
+                <ul id="Gallery" class="gallery">
+                    <li class="gallery-two"><a href="assets/images/Demo/Galleries/gallery-images/img4.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img4.jpg" alt="Image 001" /></a></li>
+                    <li class="gallery-two"><a href="assets/images/Demo/Galleries/gallery-images/img5.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img5.jpg" alt="Image 001" /></a></li>
+                </ul>
+                <!-- /Two Column Gallery -->   
+
+                <!-- One Column Gallery -->         
+                <ul id="Gallery" class="gallery">
+                    <li class="gallery-one"><a href="assets/images/Demo/Galleries/gallery-images/img6.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img6.jpg" alt="Image 001" /></a></li>
+                </ul>
+                <!-- /One Column Gallery -->    
+
+                <div class="clearfix"></div>
+
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#">Print Gallery</a></li>
+                    <li><a href="#">Web Gallery</a></li>
+                    <li><a href="#">Brochure Gallery</a></li>
+                </ul>
+
+
+            </div><!-- /content -->
+        </div>
+        <!-- *********************************************************
+       	  GALLERY PAGE END
+        ********************************************************* -->
+
+
+
+        <!-- *********************************************************
+       	  PORTFOLIO PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="portfolio" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Portfolio">Portfolio</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->
+            <div data-role="content" >
+
+                <!-- Three column portfolio -->
+                <ul id="Portfolio" class="portfolio">
+                    <li class="portfolio-three"><a href="#portfolio-detail" ><img src="assets/images/Demo/Galleries/gallery-images/img5.jpg" /><p><strong>Portfolio Name</strong><br>This is information.</p></a></li>
+                    <li class="portfolio-three"><a href="#portfolio-detail" ><img src="assets/images/Demo/Galleries/gallery-images/img4.jpg" /><p><strong>Portfolio Name</strong><br>This is information.</p></a></li>
+                    <li class="portfolio-three"><a href="#portfolio-detail"><img src="assets/images/Demo/Galleries/gallery-images/img3.jpg" /><p><strong>Portfolio Name</strong><br>This is information.</p></a></li>
+
+                </ul>
+                <!-- / Three Column Portfolio -->
+
+                <div class="clearfix"></div>
+
+                <!-- Two column portfolio -->
+                <ul id="Portfolio" class="portfolio">
+                    <li class="portfolio-two"><a href="#portfolio-detail" ><img src="assets/images/Demo/Galleries/gallery-images/img2.jpg" /><p><strong>Portfolio Name</strong><br>This is information.</p></a></li>
+                    <li class="portfolio-two"><a href="#portfolio-detail" ><img src="assets/images/Demo/Galleries/gallery-images/img6.jpg" /><p><strong>Portfolio Name</strong><br>This is information.</p></a></li>                            
+                </ul>
+                <!-- / Two Column Portfolio -->
+
+                <div class="clearfix"></div>
+
+                <!-- One column portfolio -->
+                <ul id="Portfolio" class="portfolio">
+                    <li class="portfolio-one"><a href="#portfolio-detail" ><img src="assets/images/Demo/Galleries/gallery-images/img1.jpg" /><p><strong>Portfolio Name</strong><br>This is information.</p></a></li>
+                </ul>
+                <!-- / One Column Portfolio -->
+
+                <div class="clearfix"></div>
+
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#">Print Portfolio</a></li>
+                    <li><a href="#">Web Portfolio</a></li>
+                    <li><a href="#">Brochure Portfolio</a></li>
+                </ul>
+            </div>
+            <!-- / Content -->
+        </div>
+        <!-- *********************************************************
+       	  PORTFOLIO PAGE END
+        ********************************************************* -->
+
+
+        <!-- *********************************************************
+       	 PORTFOLIO DETAIL PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="portfolio-detail" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+                <a href="#portfolio" class="backBtn">Back</a>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+                <li><a href="#" title="Portfolio Detail">Portfolio Detail</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->
+            <div data-role="content" >
+
+                <!-- Text Box Area -->
+                <div class="text-box-area">
+
+                    <img src="assets/images/Demo/Slide/demo3.jpg" alt="img" class="align-center imgbox fixwidth">
+
+
+
+                    <div class="text-info">
+                        <strong>Did you saw our buttons!</strong>
+                        <p>You can use awesome buttons below;</p>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="text-info">
+                        <strong>Button have 3 different size;</strong>
+                        <p>Sizes are small, medium and big.</p>
+                        <a href="#" class="small tiger">Button</a>
+                        <a href="#" class="medium tiger">Button</a>
+                        <a href="#" class="large tiger">Button</a>
+                    </div>
+
+                    <div class="hr-full"></div>
+
+
+                    <div class="text-info">
+                        <strong>Button Colors</strong>
+                        <p>Button have 5 different color and easy to use;</p>
+                        <a href="#" class="small green tiger">Color</a>
+                        <a href="#" class="small blue tiger">Color</a>
+                        <a href="#" class="small magenta tiger">Color</a>
+                        <a href="#" class="small orange tiger">Color</a>
+                        <a href="#" class="small yellow tiger">Color</a>
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="text-info">
+
+                        <p>Submit Button</p>
+
+                        <input type="submit" value="Submit Button" />
+
+                        <p>By default, grouped buttons are presented as a vertical list:</p>
+                        <div data-role="controlgroup">
+                            <a href="index.html" data-role="button">Yes</a>
+                            <a href="index.html" data-role="button">No</a>
+                            <a href="index.html" data-role="button">Maybe</a>
+                        </div>
+
+                        <p>By adding the <code>data-type="horizontal"</code>
+
+                        <p>Horizontal grouped buttons:</p>
+                        <div data-role="controlgroup" data-type="horizontal">
+                            <a href="index.html" data-role="button">Yes</a>
+                            <a href="index.html" data-role="button">No</a>
+                            <a href="index.html" data-role="button">Maybe</a>
+                        </div>
+
+                        <p>Horizontal grouped buttons with icons:</p>
+                        <div data-role="controlgroup" data-type="horizontal" >
+                            <a href="index.html" data-role="button" data-icon="plus">Add</a>
+                            <a href="index.html" data-role="button" data-icon="delete">Delete</a>
+                        </div>
+
+                        <p>Horizontal grouped buttons, icon only:</p>
+                        <div data-role="controlgroup" data-type="horizontal" >
+                            <a href="index.html" data-role="button" data-icon="arrow-u" data-iconpos="notext">Up</a>
+                            <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="notext">Down</a>
+                            <a href="index.html" data-role="button" data-icon="delete" data-iconpos="notext">Delete</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / Text Box Area -->
+
+            </div>
+            <!-- / Content -->
+            <div class="clear"></div>
+
+        </div>
+
+        <!-- *********************************************************
+       	  PORTFOLIO DETAIL PAGE END
+        ********************************************************* -->
+
+        
+        <!-- *********************************************************
+       	 CONTACT PAGE BEGIN
+        ********************************************************* -->
+        <div data-role="page" class="pages" id="contact" data-theme="a">
+            <!--header-->
+            <div data-role="header" class="header" data-theme="a">
+                <a href="#" class="showMenu menuBtn">Menu</a>
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- /header -->
+
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="#home"><div class="homeicon"></div></a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+            </ul>
+            <!-- / breadcrumb-->
+
+            <!-- Content -->
+            <div data-role="content">	
+
+                <!-- Container -->   
+                <div class="contactarea">
+
+                    <div class="contact-header">YOUR COMPANY NAME</div>	
+
+                    <div class="contact-sub">
+                        <div class="csubtitle">Telephone</div>
+                        <div class="csubinfo">: +78 877 89 8</div>
+                    </div>
+
+                    <div class="contact-sub">
+                        <div class="csubtitle">Fax</div>
+                        <div class="csubinfo">: +78 877 89 8</div>
+                    </div>
+
+                    <div class="contact-sub">
+                        <div class="csubtitle">Address</div>
+                        <div class="csubinfo">: 9876 St Square Garden</div>
+                    </div>
+
+                    <div class="contact-sub">
+                        <div class="csubtitle">E-Mail</div>
+                        <a class="csubinfo" href="mailto:mail@yourdomain.com">: Click here for email us.</a>
+                    </div>
+
+                    <div class="contact-sub">
+                        <div class="csubtitle">Google Map</div>
+                        <div class="csubinfo">: <a href="http://maps.google.com/maps?q=London">Click here for map direction.</a></div>
+                    </div>
+
+                </div>
+                <!-- / Contact Area -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- /content -->
+
+            <!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+            <div data-role="footer" class="nav-glyphish" data-position="fixed" data-theme="a">
+
+                <div data-role="navbar" class="nav-glyphish" data-grid="c">
+                    <ul>
+                        <li><a href="http://maps.google.com/maps?q=London" class="iconsub-white-Map" data-icon="custom">Blog</a></li>
+                        <li><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></li>
+                        <li><a href="tel:+900000000" class="iconsub-white-Phone" data-icon="custom">Phone</a></li>
+                        <li><a href="#home" class="iconsub-white-House" data-icon="custom">Home</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- end -->
+
+        </div>
+        <!-- *********************************************************
+       	  CONTACT PAGE END
+        ********************************************************* -->
+
+        <!-- Slider -->
+        <script src="assets/js/jquery.flexslider.js"></script>
+        <script>
+        $(document).ready(function() {
+
+            $("#div_home_slider").html("<br /><br /><p style='text-align: center'><img src='img/loading.gif' /><br />Cargando Ãºltimas noticias...</p>");
+            $.ajax({
+                url: "control?$cmd=plainbypage&$cf=299&$ta=select&page=1&rows=5&sidx=fecha&sord=desc&$w=",
+                dataType: ($.browser.msie) ? "text" : "xml",
+                success: function(data) {
+                    if (typeof data == "string") {
+                        xmlNoticias = new ActiveXObject("Microsoft.XMLDOM");
+                        xmlNoticias.async = false;
+                        xmlNoticias.validateOnParse = "true";
+                        xmlNoticias.loadXML(data);
+                        if (xmlNoticias.parseError.errorCode > 0) {
+                            alert("Error de compilación xml:" + xmlNoticias.parseError.errorCode + "\nParse reason:" + xmlNoticias.parseError.reason + "\nLinea:" + xmlNoticias.parseError.line);
+                        }
+                    }
+                    else {
+                        xmlNoticias = data;
+                    }
+
+                    noticias = $(xmlNoticias).find("registro");
+                    htmlForNoticias = "<ul class='slides' id='ul_home_slider'>";
+                    $.each(noticias, function() {
+                        htmlForNoticias += '<li>' +
+                                '<div id="divImg">' +
+                                '<img  src="/intranet-movil/noticias/' + $(this).find("imagen").text() + '" alt="" />' +
+                                '<div class="textImg" style="color:#000;">' +
+                                '<h3>' + $(this).find("subtitulo").text() + '</h3>' +
+                                '<p><strong>' + $(this).find("titulo").text() + '<a style="float:right" href="' + $(this).find("url").text() + '" target="_blank">Leer más</a></strong></p> ' +
+                                '</div>' +
+                                '</div>' +
+                                '</li>';
+
+                    });
+                    $("#userAvatar").attr("src", window.localStorage.getItem("foto"));
+                    $("#userName").html(window.localStorage.getItem("nombre"));
+                    $("#div_home_slider").html(htmlForNoticias + "</ul>");
+                    $('.flexslider').flexslider({
+                        slideDirection: "vertical",
+                        animation: "slide",
+                        start: function(slider) {
+                            $('.flexslider').css("max-height", "574px");
+                        }
+                    });
+
+                },
+                error: function(xhr, err) {
+                    if (xhr.responseText.indexOf("Iniciar sesi&oacute;n") > -1) {
+                        alert("Su sesión ha expirado, por seguridad es necesario volverse a registrar");
+                        window.location = 'index.html';
+                    } else {
+                        alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status);
+                        alert("responseText: " + xhr.responseText);
+                    }
+                }
+            });
+            
+        });
+        </script>
+        <!-- / Slider -->
+        <input type="hidden" id="_up_" value="0" />
+        <input type="hidden" id="_status_" value="" />
+        <input type="hidden" id="_ce_" value=""  />
+        <input type="hidden" id="_host_" value=""  />
+        <input type="hidden" id="_cmd_" value=""  />  
+        <input type="hidden" id="_cf_" value=""  />
+        <input type="hidden" id="_pagina_" value=""  />
+        <input type="hidden" id="_rows_" value=""  />
+        <input type="hidden" id="_sidx_"  value=""  /> 
+        <input type="hidden" id="_sord_" value=""  />
+        <input type="hidden" id="_w_" value=""  />
+        <input type="hidden" id="_om_" value=""  />
+        <input type="hidden" id="_security_" value=""  />
+        <input type="hidden" id="_temp_" value=""  />
+    </body>
+</html>

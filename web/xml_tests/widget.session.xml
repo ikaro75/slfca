@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<qry source="select clave_empleado, nombre, apellido_paterno, apellido_materno, email, clave_perfil, foto from empleado where clave_empleado=X" >
+    <registro id="1">
+        <clave_empleado tipo_dato="string"><![CDATA[666]]></clave_empleado>
+        <nombre tipo_dato="string"><![CDATA[Daniel]]></nombre >
+        <apellido_paterno tipo_dato="string"><![CDATA[Mart&iacute;nez]]></apellido_paterno>
+        <apellido_materno tipo_dato="string"><![CDATA[Maga&ntilde;a]]></apellido_materno>
+        <email tipo_dato="string"><![CDATA[dmartine@ilce.edu.mx]]></email>
+        <clave_perfil tipo_dato="integer"><![CDATA[1]]></clave_perfil>
+        <foto tipo_dato="string"><![CDATA[img/user penny.jpg]]></foto>
+    </registro>
+</qry>

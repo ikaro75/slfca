@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><ahorrateunaluz>
+<survey>
+<script id="tinyhippos-injected"/>
+<configuracion_survey>
+<cuestionario>
+Formato de Supervisión de Operación a Tienda DICONSA
+</cuestionario>
+<evento>null</evento>
+<seccion_actual>8</seccion_actual>
+<primera_seccion>8</primera_seccion>
+<ultima_seccion>8</ultima_seccion>
+<estatus>2</estatus>
+</configuracion_survey>
+<html>
+<form id="surveyform_687715" class="forma">
+ <table style="width: 80%;">
+ <tr>
+ <td >
+ <h1>Formato de Supervisión de Operación a Tienda DICONSA <br /><div style="padding-top:5px; font-size:13px"></div><div style="padding-top:2px"><br />
+ROSAMORADA<br />26/05/2015 00:00:00</h1>
+ </td> 
+ </tr>
+ 
+ <tr>
+ <td>
+ 
+ </td> 
+ </tr><tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_79">1. La tienda está abierta al hacer la visita&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036489" name="claveRespuesta_5036489" value="193" onclick="javascript:document.getElementById('respuesta_5036489').disabled=((this.value!=198)?true:false)" />No localizada<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036489" name="claveRespuesta_5036489" value="194" onclick="javascript:document.getElementById('respuesta_5036489').disabled=((this.value!=198this.value!=198)?true:false)" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036489" name="claveRespuesta_5036489" value="195" onclick="javascript:document.getElementById('respuesta_5036489').disabled=((this.value!=198this.value!=198this.value!=198)?true:false)" />No<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036489" name="claveRespuesta_5036489" value="196" onclick="javascript:document.getElementById('respuesta_5036489').disabled=((this.value!=198this.value!=198this.value!=198this.value!=198)?true:false)" />Opera el Programa<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036489" name="claveRespuesta_5036489" value="197" onclick="javascript:document.getElementById('respuesta_5036489').disabled=((this.value!=198this.value!=198this.value!=198this.value!=198this.value!=198)?true:false)" />No opera el Programa<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036489" name="claveRespuesta_5036489" value="198" onclick="javascript:document.getElementById('respuesta_5036489').disabled=(this.value==198?false:true)" />Ya no es Tienda, cerrada desde hace&nbsp;<input type="text" style="float: none; width: 40%;" id="respuesta_5036489" name="respuesta_5036489" value="" class="singleInput" disabled="disabled" ><br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_80">2. ¿Recibió los paquetes de focos ahorradores?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036490" name="claveRespuesta_5036490" value="199" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036490" name="claveRespuesta_5036490" value="200" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_81">3. ¿Recibió los materiales?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036491" name="claveRespuesta_5036491" value="201" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036491" name="claveRespuesta_5036491" value="202" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_82">4. ¿En alguna ocasión se quedó sin focos ahorradores?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036492" name="claveRespuesta_5036492" value="203" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036492" name="claveRespuesta_5036492" value="204" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_83">Fecha</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input type="text" id="respuesta_5036493" name="respuesta_5036493" value="" class="singleInput fecha" onBlur='javascript:check_date(this)'/>
+ <br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_84">Por cuántos días </div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input type="text" id="respuesta_5036494" name="respuesta_5036494" value="" class="singleInput "/>
+ <br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_85">Motivo</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <textarea type="text" id="respuesta_5036495" name="respuesta_5036495" class="singleInput"></textarea><br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_86">5. ¿El material de promoción está colocado en un lugar visible?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036496" name="claveRespuesta_5036496" value="205" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036496" name="claveRespuesta_5036496" value="206" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_87">6. ¿Se están probando los focos incandescentes entregados por el beneficiario?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036497" name="claveRespuesta_5036497" value="207" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036497" name="claveRespuesta_5036497" value="208" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_88">¿Por qué?</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" id="claveRespuesta_5036498" name="claveRespuesta_5036498" value="209" onclick="javascript:document.getElementById('respuesta_5036498').disabled=((this.value!=249)?true:false)" />No sabía <br /><input tipo_dato="int" type="radio" id="claveRespuesta_5036498" name="claveRespuesta_5036498" value="210" onclick="javascript:document.getElementById('respuesta_5036498').disabled=((this.value!=249this.value!=249)?true:false)" />No instaló probador<br /><input tipo_dato="int" type="radio" id="claveRespuesta_5036498" name="claveRespuesta_5036498" value="211" onclick="javascript:document.getElementById('respuesta_5036498').disabled=((this.value!=249this.value!=249this.value!=249)?true:false)" />No lo hace<br /><input tipo_dato="int" type="radio" id="claveRespuesta_5036498" name="claveRespuesta_5036498" value="249" onclick="javascript:document.getElementById('respuesta_5036498').disabled=(this.value==249?false:true)" />Otro&nbsp;<input type="text" style="float: none; width: 40%;" id="respuesta_5036498" name="respuesta_5036498" value="" class="singleInput" disabled="disabled" ><br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_89">7. ¿Se están destruyendo los focos incadescentes?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036499" name="claveRespuesta_5036499" value="212" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036499" name="claveRespuesta_5036499" value="213" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_90">8. ¿Se utiliza el contenedor para los residuos de los focos incandescentes?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036500" name="claveRespuesta_5036500" value="214" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036500" name="claveRespuesta_5036500" value="215" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_91">9. ¿Conoce los requisitos para hacer la entrega de los focos ahorradores?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036501" name="claveRespuesta_5036501" value="216" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036501" name="claveRespuesta_5036501" value="217" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_92">Mencionelos</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input type="checkbox" tipo_dato="int" id="claveRespuesta_5036502" name="claveRespuesta_5036502" value="218">Estar en la lista<br/><input type="checkbox" tipo_dato="int" id="claveRespuesta_5036503" name="claveRespuesta_5036503" value="219">Recibo de luz<br/><input type="checkbox" tipo_dato="int" id="claveRespuesta_5036504" name="claveRespuesta_5036504" value="220">Identificación <br/><input type="checkbox" tipo_dato="int" id="claveRespuesta_5036505" name="claveRespuesta_5036505" value="221">Mínimo un foco incandescente<br/><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_93">10. ¿Cuenta con formatos autorizados del Padrón de Beneficiarios Ampliado?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036506" name="claveRespuesta_5036506" value="222" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036506" name="claveRespuesta_5036506" value="223" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_94">¿Cuantas hojas tiene en la carpeta roja?</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input type="text" id="respuesta_5036507" name="respuesta_5036507" value="" class="singleInput " onBlur='javascript:check_number(this);' />
+ <br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_95">11. ¿Se llena correctamente los Padrones de Beneficiarios?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036508" name="claveRespuesta_5036508" value="224" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036508" name="claveRespuesta_5036508" value="225" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_96">12. ¿Cuánto tarda en hacerse la entrega de focos ahorradores a un beneficiario?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input id="pregunta_96" />&nbsp;minutos <br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_97">13. ¿Están registrando a los interesados que no aparecen en el Padrón?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036510" name="claveRespuesta_5036510" value="226" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036510" name="claveRespuesta_5036510" value="227" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_98">¿Qué hace?</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" id="claveRespuesta_5036511" name="claveRespuesta_5036511" value="228" />Los anota<br /><input tipo_dato="int" type="radio" id="claveRespuesta_5036511" name="claveRespuesta_5036511" value="229" />Les dice que llamen al 01-800<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_99">14. ¿Sabe lo que debe hacer al cierre del Programa?&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036512" name="claveRespuesta_5036512" value="230" />Sí<br /><input tipo_dato="int" type="radio" class="obligatorio" id="claveRespuesta_5036512" name="claveRespuesta_5036512" value="231" />No<br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_100">Mencione lo que hará:</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <input type="checkbox" tipo_dato="int" id="claveRespuesta_5036513" name="claveRespuesta_5036513" value="232">Entregar las carpetas verdes y rojas completas<br/><input type="checkbox" tipo_dato="int" id="claveRespuesta_5036514" name="claveRespuesta_5036514" value="233">Llenar y firmar las 2 Actas-Manifiesto de destrucción de focos incandescentes<br/><input type="checkbox" tipo_dato="int" id="claveRespuesta_5036515" name="claveRespuesta_5036515" value="234">Entregar los paquetes de focos ahorradores que sobraron<br/><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_101">Dudas manifestadas por los encargados:</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <textarea type="text" id="respuesta_5036516" name="respuesta_5036516" class="singleInput"></textarea><br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_102">Observaciones relevantes detectadas al hacer la supervisión:</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <textarea type="text" id="respuesta_5036517" name="respuesta_5036517" class="singleInput"></textarea><br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_103">Nombre de quien contestó la encuesta&nbsp;&nbsp;(<span class="mensajeobligatorio">Obligatoria</span>*)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ <textarea type="text" id="respuesta_5036518" name="respuesta_5036518" class="singleInput obligatorio "></textarea><br /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_104">Evidencia fotográfica (Foto de fachada de la tienda)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ 
+ <input type="file" id="respuesta_5036519" name="respuesta_5036519" value="" class="singleInput /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_105">Evidencia fotográfica (Foto de paquetes de focos ahorradores)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ 
+ <input type="file" id="respuesta_5036520" name="respuesta_5036520" value="" class="singleInput /><br /></td>
+ </tr>
+ <tr class="trPregunta"> 
+ <td style="font-family: arial;font-size: 13px;"><div id="pregunta_106">Evidencia fotográfica (Foto de materiales)</div></td>
+ </tr> 
+ <tr>
+ <td style="font-family: arial;font-size: 13px;">
+ 
+ <input type="file" id="respuesta_5036521" name="respuesta_5036521" value="" class="singleInput /><br /></td>
+ </tr>
+ 
+ </table>
+ <input type="hidden" tipo_dato="int" name="$ccp" value="687715">
+ <input type="hidden" name="$cs" value="8">
+ <input type="hidden" name="$cf" value="634">
+ <input type="hidden" name="$pk" value="687715">
+ <input type="hidden" id="$hacia" name="$hacia" value="">
+ </form>
+
+</html>
+</survey>
