@@ -364,7 +364,7 @@
                     case 6:
                       try {  
                         respuestaParticipante = new RespuestaParticipante(cuestionarioActual.getClaveCuestionarioParticipante(), "clave_pregunta", pregunta.getClavePregunta(), user);  
-                        %><input id="respuesta_<%=respuestaParticipante.getClaveRespuestaParticipante()%>" name="respuesta_<%=respuestaParticipante.getClaveRespuestaParticipante()%>" value="<%if (respuestaParticipante.getRespuesta() != null) {%><%=respuestaParticipante.getRespuesta()%><% }%>"/>&nbsp;<%=pregunta.getTextoFinal() != null ? pregunta.getTextoFinal() : ""%> <%                        
+                        %><input id="respuesta_<%=respuestaParticipante.getClaveRespuestaParticipante()%>" name="respuesta_<%=respuestaParticipante.getClaveRespuestaParticipante()%>" <%if (frmRespuestaParticipante.getCampos().get("clave_respuesta").getActivo() == 0 || cuestionarioActual.getClaveEstatus() == 6) {%> disabled="disabled" <%}%> value="<%if (respuestaParticipante.getRespuesta() != null) {%><%=respuestaParticipante.getRespuesta()%><% }%>"/>&nbsp;<%=pregunta.getTextoFinal() != null ? pregunta.getTextoFinal() : ""%> <%                        
                         }  catch (Exception e) {
                             %>No se pudo recuperar la respuesta<%
                         }                  
